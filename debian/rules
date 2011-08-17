@@ -50,6 +50,8 @@ build/libassimp-doc::
 build/assimp-utils::
 	cd doc && doxygen Doxyfile_Cmd
 
+binary/assimp-utils:: binary/libassimp2
+
 clean::
 	rm -rf doc/AssimpCmdDoc_Html/
 	rm -rf doc/AssimpDoc_Html/
