@@ -1,0 +1,51 @@
+Assimp - Open Asset Import Library
+==================================
+
+
+DEVELOPING THIS PACKAGE FOR DEBIAN
+----------------------------------
+
+this package uses CDBS as the build system and git for maintainance.
+for a quick start, see
+        http://wiki.debian.org/CDBS+git-buildpackage
+
+
+EDITING debian/control
+----------------------
+please note that you should NOT modify debian/control directly, as this file
+will be generated from debian/control.in using CDBS.
+therefore you ought to change debian/control.in and trigger a re-creation of
+debian/control using
+$ DEB_MAINTAINER_MODE=1 dpkg-buildpackage -rfakeroot
+
+
+
+IMPORTING/REPACKAGING UPSTREAM
+------------------------------
+
+upstream source ball has some peculiarities:
+
+- it ships as "assimp--<version>-sdk.zip" and unpacks to "assimp-<verion>-sdk"
+since pristine-tar cannot handle zip-files, i renamed unzipped the upstream
+tarball, renamed the directory to "assimp_<version>" and created a tarball from
+there.
+
+- the upstream package contains a lot of windows precompiled code
+
+- the upstream package contains a large number of test-models, most of them
+  being BSD-licensed, but some are not (and luckily those live in a special
+  folder, so it's easy to exclude them)
+
+  because assimp had to be repacked to generate a dfsg-compliant tarball, i also
+  excluded the windows binaries in one go...
+
+following directories have been stripped for the dfsg tarball:
+test/models-nonbsd:
+	contains a number of 3D models under problematic licenses
+bin:
+	contains precompiled w32 binaries
+lib:
+	contains procompiled w32 binaries
+
+this is the actual cmdline used to import the sources into the debian-git:
+$ git-import-orig --pristine-tar --filter lib --filter bin --filter test/models-nonbsd --filter-pristine-tar --sign-tags --keyid=<MYKEY> /tmp/deb/ASSIMP/assimp_2.0.863.tar.gz
