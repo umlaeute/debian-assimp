@@ -17,6 +17,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+## assimp-utils depends on libassimp2
+binary/assimp-utils:: binary/libassimp2
+
 include /usr/share/cdbs/1/rules/upstream-tarball.mk
 include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/cmake.mk
@@ -49,8 +52,6 @@ build/libassimp-doc::
 
 build/assimp-utils::
 	cd doc && doxygen Doxyfile_Cmd
-
-binary/assimp-utils:: binary/libassimp2
 
 clean::
 	rm -rf doc/AssimpCmdDoc_Html/
