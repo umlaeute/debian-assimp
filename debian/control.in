@@ -66,7 +66,7 @@ Description: 3D model import library (documentation)
  This package contains html documentation for the Assimp API.
 
 Package: assimp-utils
-Architecture: all
+Architecture: any
 Section: utils
 Depends: ${shlibs:Depends},
  ${misc:Depends}
