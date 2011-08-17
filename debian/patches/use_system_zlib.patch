@@ -1,0 +1,28 @@
+Author: IOhannes m zmölnig
+Description: use system's zlib rather than the one that comes with assimp
+--- assimp.orig/CMakeLists.txt
++++ assimp/CMakeLists.txt
+@@ -50,6 +50,23 @@
+ ENDIF ( ENABLE_BOOST_WORKAROUND )
+ 
+ 
++SET ( USE_BUILTIN_ZLIB ON CACHE BOOL
++	"Uses a zlib implementation built into Assimp, rather than the one found on the system."
++)
++IF ( NOT USE_BUILTIN_ZLIB )
++  INCLUDE(${CMAKE_ROOT}/Modules/FindZLIB.cmake)
++  IF ( NOT ZLIB_FOUND )
++    MESSAGE( STATUS
++            "Could not find built system's zlib. "
++            "Falling back to built-in zlib."
++           )
++  ELSE ( NOT ZLIB_FOUND )
++    ADD_DEFINITIONS( -DASSIMP_BUILD_NO_OWN_ZLIB )
++  ENDIF ( NOT ZLIB_FOUND )
++ENDIF ( NOT USE_BUILTIN_ZLIB )
++
++
++
+ ADD_SUBDIRECTORY( code/ )
+ SET ( BUILD_ASSIMP_TOOLS ON CACHE BOOL
+ 	"If the supplementary tools for Assimp are built in addition to the library."
