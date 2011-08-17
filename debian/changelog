@@ -1,0 +1,5 @@
+assimp (2.0.863~dfsg) UNRELEASED; urgency=low
+
+  * Initial release. (Closes: #615055)
+
+ -- IOhannes m zmoelnig (gpg-key at iem) <zmoelnig@iem.at>  Wed, 17 Aug 2011 12:51:21 +0200

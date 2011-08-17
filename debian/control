@@ -1,0 +1,66 @@
+Source: assimp
+Section: libs
+Priority: extra
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Uploaders: IOhannes m zmoelnig (gpg-key at iem) <zmoelnig@iem.at>
+Homepage: http://assimp.sourceforge.net/
+Standards-Version: 3.9.2
+Build-Depends: 
+Vcs-Git: git://git.debian.org/pkg-multimedia/assimp.git
+Vcs-Browser: http://git.debian.org/?p=pkg-multimedia/assimp.git
+
+
+Package: libassimp1
+Architecture: any
+Depends: ${shlibs:Depends},
+ ${misc:Depends}
+Description: 3D model import library
+ Assimp is a library to import various well-known 3D model formats ("assets") in
+ a uniform manner.
+ Assimp aims at providing a full asset conversion pipeline for use in game
+ engines / realtime rendering systems of any kind but is not limited to this
+ audience.
+ .
+ The library is designed for maximum stability and flexibility. While written in
+ C++, a pure C API exists, as well as bindings to various other languages,
+ including Python, D and Blitzmax. Assimp loads models into a straightforward
+ data structure for easy processing by your application. Various post processing
+ steps (such as general optimization or computation of extra data like normal or
+ tangent vectors) can be executed on the imported data to suit your needs.
+ .
+ This package provides the shared object necessary to run an application
+ using Assimp.
+
+
+Package: libassimp-dev
+Architecture: any
+Section: libdevel
+Depends: libassimp2 (>= ${source:Version}),
+ libassimp2 (<< ${source:Upstream-Version}+1~)
+ ${misc:Depends}
+Description: 3D model import library (development)
+ Assimp is a library to import various well-known 3D model formats ("assets") in
+ a uniform manner.
+ Assimp aims at providing a full asset conversion pipeline for use in game
+ engines / realtime rendering systems of any kind but is not limited to this
+ audience.
+ .
+ This package provides the files necessary to compile an application
+ using Assimp
+
+
+Package: assimp-utils
+Architecture: any
+Section: utils
+Depends: ${shlibs:Depends}
+ ${misc:Depends}
+Description: 3D model import library (development)
+ Assimp is a library to import various well-known 3D model formats ("assets") in
+ a uniform manner.
+ Assimp aims at providing a full asset conversion pipeline for use in game
+ engines / realtime rendering systems of any kind but is not limited to this
+ audience.
+ .
+ This package contains additional commandline utilities (currently only
+ 'assimp') to interact with 3D models.
+
