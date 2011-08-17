@@ -51,6 +51,5 @@ build/assimp-utils::
 	cd doc && doxygen Doxyfile_Cmd
 
 clean::
-	rm -f doc/assimp.1
 	rm -rf doc/AssimpCmdDoc_Html/
 	rm -rf doc/AssimpDoc_Html/
