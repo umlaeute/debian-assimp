@@ -226,13 +226,19 @@ Files: CHANGES
  contrib/zlib/trees.h
  contrib/zlib_note.txt
  debian/README.source
+ debian/assimp-utils.doc-base
  debian/assimp-utils.install
+ debian/assimp-utils.manpages
+ debian/assimp.1
  debian/compat
  debian/control
  debian/control.in
  debian/gbp.conf
  debian/libassimp-dev.install
+ debian/libassimp-doc.doc-base
+ debian/libassimp-doc.install
  debian/libassimp2.install
+ debian/patches/doxygen.patch
  debian/patches/fix_spelling.patch
  debian/patches/series
  debian/patches/use_system_zlib.patch
