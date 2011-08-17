@@ -1,17 +1,22 @@
 Source: assimp
-Section: libs
+Section: graphics
 Priority: extra
 Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
 Uploaders: IOhannes m zmoelnig (gpg-key at iem) <zmoelnig@iem.at>
 Homepage: http://assimp.sourceforge.net/
 Standards-Version: 3.9.2
-Build-Depends: 
+Build-Depends: autotools-dev,
+ cdbs (>= 0.4.85~),
+ debhelper (>= 7.0.1),
+ dh-buildinfo,
+ devscripts (>= 2.10.7~)
 Vcs-Git: git://git.debian.org/pkg-multimedia/assimp.git
 Vcs-Browser: http://git.debian.org/?p=pkg-multimedia/assimp.git
 
 
-Package: libassimp1
+Package: libassimp2
 Architecture: any
+Section: libs
 Depends: ${shlibs:Depends},
  ${misc:Depends}
 Description: 3D model import library
