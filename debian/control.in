@@ -6,6 +6,7 @@ Uploaders: IOhannes m zmoelnig (gpg-key at iem) <zmoelnig@iem.at>
 Homepage: http://assimp.sourceforge.net/
 Standards-Version: 3.9.2
 Build-Depends: @cdbs@,
+ cmake,
  doxygen
 Vcs-Git: git://git.debian.org/pkg-multimedia/assimp
 Vcs-Browser: http://git.debian.org/?p=pkg-multimedia/assimp.git
