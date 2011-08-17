@@ -49,4 +49,8 @@ build/libassimp-doc::
 
 build/assimp-utils::
 	cd doc && doxygen Doxyfile_Cmd
-	help2man -n "Open Asset Import Library Tool" -N -s 1 -m assimp --version-string="${DEB_UPSTREAM_TARBALL_VERSION}" bin/assimp
+
+clean::
+	rm -f doc/assimp.1
+	rm -rf doc/AssimpCmdDoc_Html/
+	rm -rf doc/AssimpDoc_Html/
