@@ -1,4 +1,4 @@
-assimp (2.0.863~dfsg) UNRELEASED; urgency=low
+assimp (2.0.863~dfsg-1) UNRELEASED; urgency=low
 
   * Initial release. (Closes: #615055)
 
