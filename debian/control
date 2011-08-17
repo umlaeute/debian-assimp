@@ -40,9 +40,9 @@ Description: 3D model import library
 Package: libassimp-dev
 Architecture: any
 Section: libdevel
-Depends: libassimp2 (>= ${source:Version}),
+Depends: ${misc:Depends},
+ libassimp2 (>= ${source:Version}),
  libassimp2 (<< ${source:Upstream-Version}+1~)
- ${misc:Depends}
 Description: 3D model import library (development)
  Assimp is a library to import various well-known 3D model formats ("assets") in
  a uniform manner.
@@ -57,9 +57,9 @@ Description: 3D model import library (development)
 Package: assimp-utils
 Architecture: any
 Section: utils
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends},
  ${misc:Depends}
-Description: 3D model import library (development)
+Description: 3D model import library (utilities)
  Assimp is a library to import various well-known 3D model formats ("assets") in
  a uniform manner.
  Assimp aims at providing a full asset conversion pipeline for use in game
