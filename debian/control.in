@@ -6,9 +6,8 @@ Uploaders: IOhannes m zmoelnig (gpg-key at iem) <zmoelnig@iem.at>
 Homepage: http://assimp.sourceforge.net/
 Standards-Version: 3.9.2
 Build-Depends: @cdbs@,
- cmake,
- zlib1g-dev
-Vcs-Git: git://git.debian.org/pkg-multimedia/assimp.git
+ doxygen
+Vcs-Git: git://git.debian.org/pkg-multimedia/assimp
 Vcs-Browser: http://git.debian.org/?p=pkg-multimedia/assimp.git
 
 
@@ -52,8 +51,22 @@ Description: 3D model import library (development)
  using Assimp
 
 
+Package: libassimp-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends},
+Suggests: libassimp-dev
+Description: 3D model import library (documentation)
+ Assimp is a library to import various well-known 3D model formats ("assets") in
+ a uniform manner.
+ Assimp aims at providing a full asset conversion pipeline for use in game
+ engines / realtime rendering systems of any kind but is not limited to this
+ audience.
+ .
+ This package contains html documentation for the Assimp API.
+
 Package: assimp-utils
-Architecture: any
+Architecture: all
 Section: utils
 Depends: ${shlibs:Depends},
  ${misc:Depends}
