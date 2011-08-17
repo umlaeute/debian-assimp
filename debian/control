@@ -1,8 +1,7 @@
 Source: assimp
 Section: graphics
 Priority: extra
-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
-Uploaders: IOhannes m zmoelnig (gpg-key at iem) <zmoelnig@iem.at>
+Maintainer: IOhannes m zmoelnig (gpg-key at iem) <zmoelnig@iem.at>
 Homepage: http://assimp.sourceforge.net/
 Standards-Version: 3.9.2
 Build-Depends: autotools-dev,
@@ -71,7 +70,7 @@ Description: 3D model import library (documentation)
  This package contains html documentation for the Assimp API.
 
 Package: assimp-utils
-Architecture: all
+Architecture: any
 Section: utils
 Depends: ${shlibs:Depends},
  ${misc:Depends}
