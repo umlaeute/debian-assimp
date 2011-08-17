@@ -1,0 +1,10 @@
+Document: ASSIMP Command-line tools 
+Title: Open Asset Import Library (commandline tools)
+Author: Assimp Development Team.
+Abstract: 'assimp' is a small utility that allows you to perform various actions
+on 3D models.
+Section: Graphics
+
+Format: HTML
+Index: /usr/share/doc/assimp-utils/assimp/index.html
+Files: /usr/share/doc/assimp-utils/assimp/*.html
