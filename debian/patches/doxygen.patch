@@ -1,0 +1,22 @@
+Author: IOhannes m zmölnig
+Description: removed calls to HHC (only available on w32)
+--- assimp.orig/doc/Doxyfile
++++ assimp/doc/Doxyfile
+@@ -172,7 +172,6 @@
+ DOCSET_BUNDLE_ID       = org.doxygen.Project
+ GENERATE_HTMLHELP      = YES
+ CHM_FILE               = AssimpDoc.chm
+-HHC_LOCATION           = "C:\Program Files (x86)\HTML Help Workshop/hhc.exe"
+ GENERATE_CHI           = NO
+ CHM_INDEX_ENCODING     = 
+ BINARY_TOC             = NO
+--- assimp.orig/doc/Doxyfile_Cmd
++++ assimp/doc/Doxyfile_Cmd
+@@ -170,7 +170,6 @@
+ DOCSET_BUNDLE_ID       = org.doxygen.Project
+ GENERATE_HTMLHELP      = YES
+ CHM_FILE               = AssimpCmdDoc.chm
+-HHC_LOCATION           = "C:/Program Files (x86)/HTML Help Workshop/hhc.exe"
+ GENERATE_CHI           = NO
+ CHM_INDEX_ENCODING     = 
+ BINARY_TOC             = NO
