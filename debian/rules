@@ -36,7 +36,6 @@ include /usr/share/cdbs/1/class/cmake.mk
 include /usr/share/cdbs/1/rules/utils.mk
 
 LDFLAGS+=-Wl,--as-needed
-CXXFLAGS+=-fvisibility=hidden
 
 ## to get new sources, use
 ## $ debian/rules get-orig-source

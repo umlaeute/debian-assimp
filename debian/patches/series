@@ -1,4 +1,3 @@
 fix_spelling.patch
 use_system_zlib.patch
 doxygen.patch
-visibility.patch
