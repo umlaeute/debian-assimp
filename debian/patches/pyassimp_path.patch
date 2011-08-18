@@ -1,0 +1,19 @@
+Author: IOhannes m zmölnig
+Description: the wrapper ought to search for the .so file in /usr/lib rather
+ than /usr/local/lib
+--- assimp.orig/port/PyAssimp/pyassimp/helper.py
++++ assimp/port/PyAssimp/pyassimp/helper.py
+@@ -17,11 +17,11 @@
+ # populate search directories and lists of allowed file extensions
+ # depending on the platform we're running on.
+ if os.name=='posix':
+-    additional_dirs.append('/usr/local/lib/')
++    additional_dirs.append('/usr/lib/')
+ 
+     # note - this won't catch libassimp.so.N.n, but 
+     # currently there's always a symlink called
+-    # libassimp.so in /usr/local/lib.
++    # libassimp.so in /usr/lib.
+     ext_whitelist.append('.so')
+ 
+ elif os.name=='nt':

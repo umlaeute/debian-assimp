@@ -1,3 +1,4 @@
 fix_spelling.patch
 use_system_zlib.patch
+pyassimp_path.patch
 doxygen.patch
