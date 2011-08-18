@@ -102,7 +102,8 @@ Architecture: all
 Depends: ${shlibs:Depends},
  ${misc:Depends},
  libtango-headers,
- libassimp2
+ libassimp2 (>= ${source:Version}),
+ libassimp2 (<< ${source:Upstream-Version}+1~)
 Section: libdevel
 Description: 3D model import library (D bindings)
  Assimp is a library to import various well-known 3D model formats ("assets") in
