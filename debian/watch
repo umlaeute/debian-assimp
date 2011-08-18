@@ -2,4 +2,4 @@
 version=3
 
 opts=dversionmangle=s/\~dfsg[0-9]*$// \
-http://sf.net/assimp/assimp--(.*)\.zip
+http://sf.net/assimp/assimp--(.*)-sdk\.zip
