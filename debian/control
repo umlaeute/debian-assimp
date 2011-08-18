@@ -11,6 +11,7 @@ Build-Depends: autotools-dev,
  devscripts (>= 2.10.7~),
  cmake,
  libboost1.46-dev | libboost-dev,
+ zlib1g-dev | libz-dev,
  doxygen
 Vcs-Git: git://git.debian.org/collab-maint/assimp
 Vcs-Browser: http://git.debian.org/?p=collab-maint/assimp.git
