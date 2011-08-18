@@ -82,3 +82,18 @@ Description: 3D model import library (utilities)
  This package contains additional commandline utilities (currently only
  'assimp') to interact with 3D models.
 
+
+Package: python-pyassimp
+Architecture: all
+Section: python
+Depends: ${python:Depends},
+ ${misc:Depends},
+ libassimp2
+Description: 3D model import library (python wrapper)
+ Assimp is a library to import various well-known 3D model formats ("assets") in
+ a uniform manner.
+ Assimp aims at providing a full asset conversion pipeline for use in game
+ engines / realtime rendering systems of any kind but is not limited to this
+ audience.
+ .
+ This package provides python bindings to the Assimp library.
