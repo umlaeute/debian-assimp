@@ -20,6 +20,16 @@
 ## assimp-utils depends on libassimp2
 binary/assimp-utils:: binary/libassimp2
 
+# trying to get clean done
+.PHONY: cleanbuilddir-force
+cleanbuilddir-force:
+	-$(if $(call cdbs_streq,$(DEB_BUILDDIR),$(DEB_SRCDIR)),,rm -rf $(DEB_BUILDDIR))
+	mkdir -p $(DEB_BUILDDIR)
+
+cleanbuilddir:: cleanbuilddir-force
+
+
+
 include /usr/share/cdbs/1/rules/upstream-tarball.mk
 include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/cmake.mk
@@ -57,3 +67,4 @@ build/assimp-utils::
 clean::
 	rm -rf doc/AssimpCmdDoc_Html/
 	rm -rf doc/AssimpDoc_Html/
+
