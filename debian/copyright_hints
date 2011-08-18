@@ -228,6 +228,7 @@ Files: CHANGES
  debian/README.source
  debian/assimp-utils.doc-base
  debian/assimp-utils.install
+ debian/assimp-utils.lintian-overrides
  debian/assimp-utils.manpages
  debian/assimp.1
  debian/compat
@@ -238,10 +239,12 @@ Files: CHANGES
  debian/libassimp-doc.doc-base
  debian/libassimp-doc.install
  debian/libassimp2.install
+ debian/libassimp2.symbols
  debian/patches/doxygen.patch
  debian/patches/fix_spelling.patch
  debian/patches/series
  debian/patches/use_system_zlib.patch
+ debian/patches/visibility.patch
  debian/source/format
  debian/source/local-options
  debian/watch
