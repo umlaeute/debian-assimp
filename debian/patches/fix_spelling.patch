@@ -1,6 +1,7 @@
 Author: IOhannes m zmölnig
 Description: fixed minor spelling errors
  .e.g ommitted->omitted and splitted->split
+Forwarded: https://sourceforge.net/tracker/?func=detail&aid=3393728&group_id=226462&atid=1067634
 --- assimp.orig/code/BlenderScene.h
 +++ assimp/code/BlenderScene.h
 @@ -421,7 +421,7 @@

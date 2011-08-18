@@ -1,5 +1,6 @@
 Author: IOhannes m zmölnig
 Description: use system's zlib rather than the one that comes with assimp
+Forwarded: not-needed
 --- assimp.orig/CMakeLists.txt
 +++ assimp/CMakeLists.txt
 @@ -50,6 +50,23 @@
