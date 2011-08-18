@@ -1,0 +1,3 @@
+# 4 files in tools/assimp_view/ are distributed "under the terms of the GNU
+# Lesser General Public License (LGPL)", without further version information
+assimp-utils binary: copyright-refers-to-symlink-license usr/share/common-licenses/LGPL
