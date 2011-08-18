@@ -6,6 +6,7 @@ Homepage: http://assimp.sourceforge.net/
 Standards-Version: 3.9.2
 Build-Depends: @cdbs@,
  cmake,
+ libboost1.46-dev | libboost-dev,
  doxygen
 Vcs-Git: git://git.debian.org/collab-maint/assimp
 Vcs-Browser: http://git.debian.org/?p=collab-maint/assimp.git
