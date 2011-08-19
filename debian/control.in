@@ -87,7 +87,8 @@ Architecture: all
 Section: python
 Depends: ${python:Depends},
  ${misc:Depends},
- libassimp2
+ libassimp2 (>= ${source:Version}),
+ libassimp2 (<< ${source:Upstream-Version}+1~)
 Description: 3D model import library (Python bindings)
  Assimp is a library to import various well-known 3D model formats ("assets") in
  a uniform manner.
