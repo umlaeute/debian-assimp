@@ -346,7 +346,6 @@ Files: CHANGES
  debian/README.source
  debian/assimp-utils.doc-base
  debian/assimp-utils.install
- debian/assimp-utils.lintian-overrides
  debian/assimp-utils.manpages
  debian/assimp.1
  debian/compat
