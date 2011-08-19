@@ -88,11 +88,11 @@ Description: simply dylib loading by using ctypes functionality
 -                # OK, this except is evil. But different OSs will throw different
 -                # errors. So just ignore any errors.
 -                continue
-+    libassimp = None
-+    try:
-+        libassimp = ctypes.util.find_library('assimp')
-+    except (OSError, IOError):
-+        pass  # Will attemp to load it with None anyway.
++    libassimp = 'libassimp.so.2'
++#    try:
++#        libassimp = ctypes.util.find_library('assimp')
++#    except (OSError, IOError):
++#        pass  # Will attemp to load it with None anyway.
 +
 +    if sys.version_info[0] >= 2 and sys.version_info[1] >= 6:
 +        LIBASSIMP = ctypes.CDLL(libassimp, use_errno=True)
