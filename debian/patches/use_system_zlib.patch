@@ -129,3 +129,26 @@ Forwarded: not-needed
  SET_TARGET_PROPERTIES( assimp_cmd PROPERTIES
  	OUTPUT_NAME assimp
  )
+--- assimp.orig/tools/assimp_cmd/Main.h
++++ assimp/tools/assimp_cmd/Main.h
+@@ -63,7 +63,12 @@
+ #include <../code/StringComparison.h>
+ #include <../code/Hash.h>
+ 
+-#include <../contrib/zlib/zlib.h>
++#ifdef ASSIMP_BUILD_NO_OWN_ZLIB
++# include <zlib.h>
++#else
++# include "../contrib/zlib/zlib.h"
++#endif
++
+ 
+ using namespace Assimp;
+ 
+@@ -165,4 +170,4 @@
+ 	unsigned int num);
+ 
+ 
+-#endif // !! AICMD_MAIN_INCLUDED
+\ No newline at end of file
++#endif // !! AICMD_MAIN_INCLUDED
