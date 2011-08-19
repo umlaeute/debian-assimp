@@ -1,5 +1,5 @@
 Author: IOhannes m zmölnig
-Description: no use building a stripped away the BoostWorkaround
+Description: no use building a non-existant BoostWorkaround
 --- assimp.orig/code/CMakeLists.txt
 +++ assimp/code/CMakeLists.txt
 @@ -54,18 +54,6 @@
