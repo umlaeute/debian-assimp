@@ -4,11 +4,12 @@ Priority: extra
 Maintainer: IOhannes m zmoelnig (gpg-key at iem) <zmoelnig@iem.at>
 Homepage: http://assimp.sourceforge.net/
 Standards-Version: 3.9.2
-Build-Depends: autotools-dev,
- cdbs (>= 0.4.85~),
- debhelper (>= 7.0.1),
+Build-Depends: debhelper (>= 7.0.1),
  dh-buildinfo,
  devscripts (>= 2.10.7~),
+ python (>= 2.6.5),
+ cdbs (>= 0.4.95~),
+ python-dev (>= 2.3.5-7),
  cmake,
  libboost1.46-dev | libboost-dev,
  zlib1g-dev | libz-dev,
@@ -85,4 +86,37 @@ Description: 3D model import library (utilities)
  .
  This package contains additional commandline utilities (currently only
  'assimp') to interact with 3D models.
+
+Package: python-pyassimp
+Architecture: all
+Section: python
+Depends: ${python:Depends},
+ ${misc:Depends},
+ libassimp2 (>= ${source:Version}),
+ libassimp2 (<< ${source:Upstream-Version}+1~)
+Description: 3D model import library (Python bindings)
+ Assimp is a library to import various well-known 3D model formats ("assets") in
+ a uniform manner.
+ Assimp aims at providing a full asset conversion pipeline for use in game
+ engines / realtime rendering systems of any kind but is not limited to this
+ audience.
+ .
+ This package provides Python bindings to the Assimp library.
+
+Package: libassimp2-d-dev
+Architecture: all
+Depends: ${shlibs:Depends},
+ ${misc:Depends},
+ libtango-headers,
+ libassimp2 (>= ${source:Version}),
+ libassimp2 (<< ${source:Upstream-Version}+1~)
+Section: libdevel
+Description: 3D model import library (D bindings)
+ Assimp is a library to import various well-known 3D model formats ("assets") in
+ a uniform manner.
+ Assimp aims at providing a full asset conversion pipeline for use in game
+ engines / realtime rendering systems of any kind but is not limited to this
+ audience.
+ .
+ This package provides D bindings to the Assimp library.
 
