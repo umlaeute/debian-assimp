@@ -7,13 +7,6 @@ Files: *
 Copyright: 2006-2010, ASSIMP Development Team
 License: BSD-3
 
-Files: tools/assimp_view/Background.h,
- tools/assimp_view/Camera.h,
- tools/assimp_view/RenderOptions.h,
- tools/assimp_view/Shaders.h
-Copyright: 2008-2009. Assimp Development Team. 
-License: LGPL
-
 Files: code/BoostWorkaround/boost/
 Copyright: 2006-2010, ASSIMP Development Team
 	1994-2008, Boost Developers
@@ -59,34 +52,6 @@ Files: debian/*
 Copyright: 2011, IOhannes m zmölnig <zmoelnig@iem.at>
 License: GPL-3+
 
-Files: test/models/BLEND/HUMAN.blend*
-Copyright: 2010, Tobias Rittig
-License: Redistribution and reuse allowed for any purpose, credits appreciated.
-
-Files: test/models/BVH
-Copyright: 2008, Bruce Hahne
-License: BVH-license
-
-Files: test/models/Collada/*
-Copyright: 2006 Sony Computer Entertainment Inc.
-License: SCEA-1.0
-
-Files: test/models/Collada/kwxport_test_vcolors.dae
-Copyright: jwatte http://www.kwxport.org/
-License: MIT
-
-Files: test/models/IRRMesh/* test/models/MD2/*
-Copyright: 2002-2007 Nikolaus Gebhardt
-License: zlib/libpng
-
-Files: test/models/MS3D/jeep1.*
-Copyright: Psionic (http://www.psionicdesign.com)
-License: FREE for use however you like, credits are appreciated!!!
-
-Files: test/models/Q3D/E-AT-AT.q3o test/models/Q3D/earth.q3o
-License: Public Domain
-
-
 License: BSD-3
  Redistribution and use in source and binary forms, with or without
  modification, is permitted provided that the following conditions are
@@ -111,6 +76,14 @@ License: BSD-3
  LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Comment:
+ Some of the  source code and model files include different license information.
+ However, according to an email from one of the core developers at the
+ assimp-discussions mailinglist at sourceforge, this information is outdated and
+ "all of Assimp is 3-clause BSD with the unfortunate exception of
+ ./test/models-nonbsd."
+ http://sourceforge.net/mailarchive/message.php?msg_id=27966437
+ ./test/models-nonbsd/ has been excluded from the debian source package
 
 License: BSL-1
  Permission is hereby granted, free of charge, to any person or organization
@@ -165,24 +138,6 @@ Comment:
  On Debian systems, the complete text of the GNU Lesser General Public
  License (LGPL, formerly named GNU Library General Public License)
  version 2.1 can be found in '/usr/share/common-licenses/LGPL-2.1'.
- .
- You should have received a copy of the GNU Lesser General Public
- License along with this program.  If not, see
- <http://www.gnu.org/licenses/>.
-
-License: LGPL
- This header is free software; you can redistribute it and/or modify it
- under the terms of the GNU Lesser General Public License as published
- by the Free Software Foundation.
- .
- This header is distributed in the hope that it will be useful, but
- WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser
- General Public License for more details.
-Comment:
- On Debian systems, the complete text of the GNU Lesser General Public
- License (LGPL, formerly named GNU Library General Public License)
- can be found in '/usr/share/common-licenses/LGPL'.
  .
  You should have received a copy of the GNU Lesser General Public
  License along with this program.  If not, see
@@ -272,44 +227,3 @@ License: infozip
  Info-ZIP retains the right to use the names "Info-ZIP," "Zip," "UnZip,"
  "UnZipSFX," "WiZ," "Pocket UnZip," "Pocket Zip," and "MacZip" for its own source
  and binary releases..
-
-License: BVH-license
- CMU places no restrictions on the use of the original dataset, and I (Bruce)
- place no additional restrictions on the use of this particular BVH conversion.
- .
- Here's the relevant paragraph from mocap.cs.cmu.edu:
- .
- Use this data! This data is free for use in research and commercial projects
- worldwide. If you publish results obtained using this data, we would appreciate
- it if you would send the citation to your published paper to
- jkh+mocap@cs.cmu.edu, and also would add this text to your acknowledgments
- section: "The data used in this project was obtained from mocap.cs.cmu.edu. The
- database was created with funding from NSF EIA-0196217."
-
-License: SCEA-1.0
- Licensed under the SCEA Shared Source License, Version 1.0 (the "License"); you
- may not use this file except in compliance with the License. You may obtain a
- copy of the License at: http://research.scea.com/scea_shared_source_license.html
- Unless required by applicable law or agreed to in writing, software distributed
- under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT
- WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
- License for the specific language governing permissions and limitations under
- the License.
-
-License: MIT
- Permission is hereby granted, free of charge, to any person obtaining a copy of
- this software and associated documentation files (the "Software"), to deal in
- the Software without restriction, including without limitation the rights to
- use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
- the Software, and to permit persons to whom the Software is furnished to do so,
- subject to the following conditions:
- .
- The above copyright notice and this permission notice shall be included in all
- copies or substantial portions of the Software.
- .
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
- FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
- COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
- IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
- CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
