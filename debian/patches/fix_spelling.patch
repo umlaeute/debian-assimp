@@ -144,17 +144,6 @@ Forwarded: https://sourceforge.net/tracker/?func=detail&aid=3393728&group_id=226
  The suffix <tt>_img&lt;n&gt;</tt> is appended to the file name if the -s switch is not specified 
  (where <tt>&lt;n&gt;</tt> is the zero-based index of the texture in the model file).<br>
  
---- assimp.orig/test/regression/gen_db.py
-+++ assimp/test/regression/gen_db.py
-@@ -55,7 +55,7 @@
- usage = """gen_db [-i=...] [-e=...] [-p] [-n]
- 
- (lists of file extensions are comma delimited, i.e. `3ds,lwo,x`)
---i,--include: List of file extensions to update dumps for. If ommitted,
-+-i,--include: List of file extensions to update dumps for. If omitted,
-          all file extensions are updated except those in `exclude`.
- 
- -e,--exclude: Merged with settings.exclude_extensions to produce a
 --- assimp.orig/tools/assimp_cmd/ImageExtractor.cpp
 +++ assimp/tools/assimp_cmd/ImageExtractor.cpp
 @@ -49,7 +49,7 @@
