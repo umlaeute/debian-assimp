@@ -2769,8 +2769,6 @@ libassimp.so.2 libassimp2 #MINVER#
  _ZNSt5dequeIPKN6Assimp7Blender6ObjectESaIS4_EED1Ev@Base 2.0.863
  _ZNSt5dequeIPKN6Assimp7Blender6ObjectESaIS4_EED2Ev@Base 2.0.863
  _ZNSt5dequeIPN6Assimp3COB4FaceESaIS3_EE17_M_reallocate_mapEjb@Base 2.0.863
- _ZNSt5dequeIPN6Assimp3COB4FaceESaIS3_EEC1ERKS5_@Base 2.0.863
- _ZNSt5dequeIPN6Assimp3COB4FaceESaIS3_EEC2ERKS5_@Base 2.0.863
  _ZNSt5dequeIjSaIjEE17_M_reallocate_mapEjb@Base 2.0.863
  _ZNSt6vectorI10aiVector2DSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_@Base 2.0.863
  _ZNSt6vectorI10aiVector2DSaIS0_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS0_S2_EEjRKS0_@Base 2.0.863
