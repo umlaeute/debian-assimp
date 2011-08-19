@@ -40,12 +40,48 @@ there.
   excluded the windows binaries in one go...
 
 following directories have been stripped for the dfsg tarball:
-test/models-nonbsd:
+test/
+    models-nonbsd:
 	contains a number of 3D models under problematic licenses
+	excluded because of license issues
+
+    *
+        the unittest infrastructure
+	excluded because it only works on w32
+
+    models
+    	contains 30MB of bsd-licensed models, only used in unittests
+	excluded because models are huge and not used
+
 bin:
 	contains precompiled w32 binaries
+	excluded because they are of no use on debian (and eat storage)
 lib:
 	contains procompiled w32 binaries
+	excluded because they are of no use on debian (and eat storage)
+
+code/BoostWorkaround
+	contains local copy of boost
+	(i excluded them after a discussion on debian-mentors, to make sure, the
+	system's boost is used)
+
+contrib/zlib
+	contains a local copy of zlib
+	excluded to use the system's zlib
+
+contrib/cppunit-1.12.1
+	contains a local copy of cppunit-1.12.1
+	excluded because we don't do tests and if we did we would use the
+	system's cppunit
+
+samples/glut
+	contains GLUT binaries for w32
+	excluded because they are of no use (and of dubious license)
 
 this is the actual cmdline used to import the sources into the debian-git:
-$ git-import-orig --pristine-tar --filter lib --filter bin --filter test/models-nonbsd --filter-pristine-tar --sign-tags --keyid=<MYKEY> /tmp/deb/ASSIMP/assimp_2.0.863.tar.gz
+$ git-import-orig --pristine-tar \
+ --filter lib --filter bin --filter test \
+ --filter code/BoostWorkaround --filter contrib/zlib \
+ --filter contrib/cppunit-1.12.1  --filter samples/glut \
+ --filter-pristine-tar --sign-tags --keyid=${DEBSIGN_KEYID} \
+ /tmp/assimp_2.0.863.tar.gz
