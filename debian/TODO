@@ -1,0 +1,50 @@
+dfsg-repacking:
+ I'm wondering whether it would make sense to remove other cruft as well -
+ basically contrib/ entirely and workspaces could go as well.
+
+version:
+ I think +dfsg would be preferable over ~dfsg, but you might have good reasons
+ for your choice?
+
+debian/libassimp2.symbols file
+ Please consider using the c++ tag after having applied c++filt; see several
+ recent threads on debian-mentors, e.g.,
+ http://lists.debian.org/debian-mentors/2011/07/msg00632.html
+
+FTBFS:
+ dpkg-source -b assimp-2.0.863~dfsg
+ dpkg-source: info: using source format `3.0 (quilt)'
+ dpkg-source: info: building assimp using existing
+ ./assimp_2.0.863~dfsg.orig.tar.gz
+ dpkg-source: error: unwanted binary file: debian/copyright_hints
+ dpkg-source: error: detected 1 unwanted binary file (add it in
+ debian/source/include-binaries to allow its inclusion).
+
+
+unittests:
+ Upstream seems to ship tests; it would be nice if those were run at build time.
+ (But using Debian's cppunit, not the home-grown one in contrib/.)
+
+
+DEP-5-enabled lintian (see bug #633779) also reports several issues:
+ W: assimp source: missing-field-in-dep5-copyright paragraph 20 copyright
+ W: assimp source: comma-separated-files-in-dep5-copyright
+ W: assimp source: missing-license-paragraph-in-dep5-copyright paragraph 32 public domain
+ W: assimp source: missing-license-paragraph-in-dep5-copyright paragraph 32 free for use however you like credits are appreciated!!!
+ W: assimp source: missing-license-paragraph-in-dep5-copyright paragraph 32 reuse allowed for any purpose credits appreciated.
+ W: assimp source: missing-license-paragraph-in-dep5-copyright paragraph 32 redistribution 
+
+python:
+ I think you could drop build-dependency on python-dev.
+
+ I would consider stricter dependency between python-pyassimp and libassimp2.
+ (It doesn't matter for the time being, but it might become a problem in the
+ future.)
+
+ Shared library loading mechanism is utterly broken
+
+ Also, why did it print stuff on stdout? :/
+
+
+
+
