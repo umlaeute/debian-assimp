@@ -2,4 +2,5 @@ fix_spelling.patch
 use_system_zlib.patch
 no_boost_workaround.patch
 pyassimp.patch
+visibility.patch
 doxygen.patch

@@ -1,0 +1,25 @@
+Author: IOhannes m zmölnig
+Description: do not export symbols that have not been exported explicitely
+--- assimp.orig/CMakeLists.txt
++++ assimp/CMakeLists.txt
+@@ -67,6 +67,9 @@
+   SET (ZLIB_FOUND 0)
+ ENDIF ( NOT USE_BUILTIN_ZLIB )
+ 
++## hide all not-exported symbols
++ADD_DEFINITIONS( -fvisibility=hidden )
++
+ ADD_SUBDIRECTORY( code/ )
+ SET ( BUILD_ASSIMP_TOOLS ON CACHE BOOL
+ 	"If the supplementary tools for Assimp are built in addition to the library."
+--- assimp.orig/include/aiDefines.h
++++ assimp/include/aiDefines.h
+@@ -136,7 +136,7 @@
+ 	
+ #	define AI_WONT_RETURN
+ 
+-#	define ASSIMP_API
++#	define ASSIMP_API __attribute__ ((visibility("default")))
+ #	define AI_FORCE_INLINE inline
+ #endif // (defined _MSC_VER)
+ 
