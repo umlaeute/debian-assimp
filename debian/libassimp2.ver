@@ -1,7 +1,9 @@
 {
 	global:
 		ai*;
-		*Assimp*;
+		extern "C++" {
+		 Assimp::*;
+		};
 	local:
 		*;
 };
