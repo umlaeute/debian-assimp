@@ -3,4 +3,5 @@ use_system_zlib.patch
 no_boost_workaround.patch
 pyassimp.patch
 visibility.patch
+hide-internal-classes.patch
 doxygen.patch
