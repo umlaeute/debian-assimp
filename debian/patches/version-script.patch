@@ -1,0 +1,11 @@
+--- assimp.orig/code/CMakeLists.txt
++++ assimp/code/CMakeLists.txt
+@@ -707,7 +707,7 @@
+ 	SOVERSION ${LIBRARY_SOVERSION}
+ )
+ 
+-TARGET_LINK_LIBRARIES( assimp ${ZLIB_LIBRARY} )
++TARGET_LINK_LIBRARIES( assimp ${ZLIB_LIBRARY} --version-script=debian/libassimp2.ver)
+ 
+ INSTALL( TARGETS assimp DESTINATION ${LIB_INSTALL_DIR} )
+ INSTALL( FILES ${PUBLIC_HEADERS} DESTINATION ${INCLUDE_INSTALL_DIR}/assimp )

@@ -1,0 +1,7 @@
+{
+	global:
+		ai*;
+		*Assimp*;
+	local:
+		*;
+};
