@@ -3,6 +3,7 @@
 		ai*;
 		extern "C++" {
 		 Assimp::*;
+		 ai*;
 		};
 	local:
 		*;
