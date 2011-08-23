@@ -1,5 +1,6 @@
 Author: IOhannes m zmölnig
-Description: do not export symbols that have not been exported explicitely
+Description: do not export symbols that have not been exported explicitly
+Applied-Upstream: http://assimp.svn.sourceforge.net/viewvc/assimp?view=revision&revision=1066
 --- assimp.orig/CMakeLists.txt
 +++ assimp/CMakeLists.txt
 @@ -67,6 +67,9 @@
