@@ -35,10 +35,10 @@ libassimp.so.2 libassimp2 #MINVER#
  (c++)"Assimp::ProgressHandler::~ProgressHandler()@Base" 2.0.863
  (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator delete[](void*)@Base" 2.0.863
  (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator delete(void*)@Base" 2.0.863
- (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator new[](size_t)@Base" 2.0.863
- (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator new[](size_t, std::nothrow_t const&)@Base" 2.0.863
- (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator new(size_t)@Base" 2.0.863
- (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator new(size_t, std::nothrow_t const&)@Base" 2.0.863
+ (c++|subst)"Assimp::Intern::AllocateFromAssimpHeap::operator new[]({c++:size_t})@Base" 2.0.863
+ (c++|subst)"Assimp::Intern::AllocateFromAssimpHeap::operator new[]({c++:size_t}, std::nothrow_t const&)@Base" 2.0.863
+ (c++|subst)"Assimp::Intern::AllocateFromAssimpHeap::operator new({c++:size_t})@Base" 2.0.863
+ (c++|subst)"Assimp::Intern::AllocateFromAssimpHeap::operator new({c++:size_t}, std::nothrow_t const&)@Base" 2.0.863
  (c++)"Assimp::Logger::info(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 2.0.863
  (c++)"Assimp::Logger::warn(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 2.0.863
  (c++)"Assimp::Logger::debug(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 2.0.863
@@ -61,7 +61,7 @@ libassimp.so.2 libassimp2 #MINVER#
  (c++)"Assimp::Importer::UnregisterLoader(Assimp::BaseImporter*)@Base" 2.0.863
  (c++)"Assimp::Importer::UnregisterPPStep(Assimp::BaseProcess*)@Base" 2.0.863
  (c++)"Assimp::Importer::SetPropertyString(char const*, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool*)@Base" 2.0.863
- (c++)"Assimp::Importer::ReadFileFromMemory(void const*, size_t, unsigned int, char const*)@Base" 2.0.863
+ (c++|subst)"Assimp::Importer::ReadFileFromMemory(void const*, {c++:size_t}, unsigned int, char const*)@Base" 2.0.863
  (c++)"Assimp::Importer::SetProgressHandler(Assimp::ProgressHandler*)@Base" 2.0.863
  (c++)"Assimp::Importer::SetPropertyInteger(char const*, int, bool*)@Base" 2.0.863
  (c++)"Assimp::Importer::ApplyPostProcessing(unsigned int)@Base" 2.0.863
@@ -92,7 +92,7 @@ libassimp.so.2 libassimp2 #MINVER#
  (c++)"Assimp::Importer::GetMemoryRequirements(aiMemoryInfo&) const@Base" 2.0.863
  (c++)"Assimp::Importer::IsDefaultProgressHandler() const@Base" 2.0.863
  (c++)"Assimp::Importer::GetScene() const@Base" 2.0.863
- (c++)"Assimp::Blender::MDeformVert* std::vector<Assimp::Blender::MDeformVert, std::allocator<Assimp::Blender::MDeformVert> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<Assimp::Blender::MDeformVert const*, std::vector<Assimp::Blender::MDeformVert, std::allocator<Assimp::Blender::MDeformVert> > > >(size_t, __gnu_cxx::__normal_iterator<Assimp::Blender::MDeformVert const*, std::vector<Assimp::Blender::MDeformVert, std::allocator<Assimp::Blender::MDeformVert> > >, __gnu_cxx::__normal_iterator<Assimp::Blender::MDeformVert const*, std::vector<Assimp::Blender::MDeformVert, std::allocator<Assimp::Blender::MDeformVert> > >)@Base" 2.0.863
+ (c++|subst)"Assimp::Blender::MDeformVert* std::vector<Assimp::Blender::MDeformVert, std::allocator<Assimp::Blender::MDeformVert> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<Assimp::Blender::MDeformVert const*, std::vector<Assimp::Blender::MDeformVert, std::allocator<Assimp::Blender::MDeformVert> > > >({c++:size_t}, __gnu_cxx::__normal_iterator<Assimp::Blender::MDeformVert const*, std::vector<Assimp::Blender::MDeformVert, std::allocator<Assimp::Blender::MDeformVert> > >, __gnu_cxx::__normal_iterator<Assimp::Blender::MDeformVert const*, std::vector<Assimp::Blender::MDeformVert, std::allocator<Assimp::Blender::MDeformVert> > >)@Base" 2.0.863
  (c++)"aiVectorKey* std::__move_merge<__gnu_cxx::__normal_iterator<aiVectorKey*, std::vector<aiVectorKey, std::allocator<aiVectorKey> > >, __gnu_cxx::__normal_iterator<aiVectorKey*, std::vector<aiVectorKey, std::allocator<aiVectorKey> > >, aiVectorKey*>(__gnu_cxx::__normal_iterator<aiVectorKey*, std::vector<aiVectorKey, std::allocator<aiVectorKey> > >, __gnu_cxx::__normal_iterator<aiVectorKey*, std::vector<aiVectorKey, std::allocator<aiVectorKey> > >, __gnu_cxx::__normal_iterator<aiVectorKey*, std::vector<aiVectorKey, std::allocator<aiVectorKey> > >, __gnu_cxx::__normal_iterator<aiVectorKey*, std::vector<aiVectorKey, std::allocator<aiVectorKey> > >, aiVectorKey*)@Base" 2.0.863
  (c++)"aiQuatKey* std::__move_merge<__gnu_cxx::__normal_iterator<aiQuatKey*, std::vector<aiQuatKey, std::allocator<aiQuatKey> > >, __gnu_cxx::__normal_iterator<aiQuatKey*, std::vector<aiQuatKey, std::allocator<aiQuatKey> > >, aiQuatKey*>(__gnu_cxx::__normal_iterator<aiQuatKey*, std::vector<aiQuatKey, std::allocator<aiQuatKey> > >, __gnu_cxx::__normal_iterator<aiQuatKey*, std::vector<aiQuatKey, std::allocator<aiQuatKey> > >, __gnu_cxx::__normal_iterator<aiQuatKey*, std::vector<aiQuatKey, std::allocator<aiQuatKey> > >, __gnu_cxx::__normal_iterator<aiQuatKey*, std::vector<aiQuatKey, std::allocator<aiQuatKey> > >, aiQuatKey*)@Base" 2.0.863
  (c++)"Assimp::D3DS::aiFloatKey* std::__move_merge<__gnu_cxx::__normal_iterator<Assimp::D3DS::aiFloatKey*, std::vector<Assimp::D3DS::aiFloatKey, std::allocator<Assimp::D3DS::aiFloatKey> > >, __gnu_cxx::__normal_iterator<Assimp::D3DS::aiFloatKey*, std::vector<Assimp::D3DS::aiFloatKey, std::allocator<Assimp::D3DS::aiFloatKey> > >, Assimp::D3DS::aiFloatKey*>(__gnu_cxx::__normal_iterator<Assimp::D3DS::aiFloatKey*, std::vector<Assimp::D3DS::aiFloatKey, std::allocator<Assimp::D3DS::aiFloatKey> > >, __gnu_cxx::__normal_iterator<Assimp::D3DS::aiFloatKey*, std::vector<Assimp::D3DS::aiFloatKey, std::allocator<Assimp::D3DS::aiFloatKey> > >, __gnu_cxx::__normal_iterator<Assimp::D3DS::aiFloatKey*, std::vector<Assimp::D3DS::aiFloatKey, std::allocator<Assimp::D3DS::aiFloatKey> > >, __gnu_cxx::__normal_iterator<Assimp::D3DS::aiFloatKey*, std::vector<Assimp::D3DS::aiFloatKey, std::allocator<Assimp::D3DS::aiFloatKey> > >, Assimp::D3DS::aiFloatKey*)@Base" 2.0.863
