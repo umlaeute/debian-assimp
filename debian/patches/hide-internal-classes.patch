@@ -1,5 +1,7 @@
 Author: IOhannes m zmölnig
 Description: remove "export" label (ASSIMP_API) from internal classes
+Applied-Upstream: http://assimp.svn.sourceforge.net/viewvc/assimp?view=revision&revision=1066
+
 --- assimp.orig/code/Assimp.cpp
 +++ assimp/code/Assimp.cpp
 @@ -388,7 +388,7 @@
