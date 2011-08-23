@@ -5,8 +5,9 @@ Maintainer: IOhannes m zmoelnig (gpg-key at iem) <zmoelnig@iem.at>
 Homepage: http://assimp.sourceforge.net/
 Standards-Version: 3.9.2
 Build-Depends: @cdbs@,
- cmake,
  dpkg-dev (>= 1.15.6),
+ pkg-kde-tools,
+ cmake,
  libboost1.46-dev | libboost-dev,
  zlib1g-dev | libz-dev,
  doxygen
