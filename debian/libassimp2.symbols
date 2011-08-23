@@ -1,106 +1,106 @@
 libassimp.so.2 libassimp2 #MINVER#
- (c++)"aiMaterial::~aiMaterial()" 2.0.863
- (c++)"aiMaterial::~aiMaterial()" 2.0.863
- (c++)"Assimp::NullLogger::attachStream(Assimp::LogStream*, unsigned int)" 2.0.863
- (c++)"Assimp::NullLogger::detatchStream(Assimp::LogStream*, unsigned int)" 2.0.863
- (c++)"Assimp::NullLogger::OnInfo(char const*)" 2.0.863
- (c++)"Assimp::NullLogger::OnWarn(char const*)" 2.0.863
- (c++)"Assimp::NullLogger::OnDebug(char const*)" 2.0.863
- (c++)"Assimp::NullLogger::OnError(char const*)" 2.0.863
- (c++)"Assimp::NullLogger::~NullLogger()" 2.0.863
- (c++)"Assimp::NullLogger::~NullLogger()" 2.0.863
- (c++)"Assimp::NullLogger::~NullLogger()" 2.0.863
- (c++)"Assimp::DefaultLogger::GetThreadID()" 2.0.863
- (c++)"Assimp::DefaultLogger::attachStream(Assimp::LogStream*, unsigned int)" 2.0.863
- (c++)"Assimp::DefaultLogger::isNullLogger()" 2.0.863
- (c++)"Assimp::DefaultLogger::detatchStream(Assimp::LogStream*, unsigned int)" 2.0.863
- (c++)"Assimp::DefaultLogger::s_pNullLogger" 2.0.863
- (c++)"Assimp::DefaultLogger::WriteToStreams(char const*, Assimp::Logger::ErrorSeverity)" 2.0.863
- (c++)"Assimp::DefaultLogger::get()" 2.0.863
- (c++)"Assimp::DefaultLogger::set(Assimp::Logger*)" 2.0.863
- (c++)"Assimp::DefaultLogger::kill()" 2.0.863
- (c++)"Assimp::DefaultLogger::OnInfo(char const*)" 2.0.863
- (c++)"Assimp::DefaultLogger::OnWarn(char const*)" 2.0.863
- (c++)"Assimp::DefaultLogger::create(char const*, Assimp::Logger::LogSeverity, unsigned int, Assimp::IOSystem*)" 2.0.863
- (c++)"Assimp::DefaultLogger::OnDebug(char const*)" 2.0.863
- (c++)"Assimp::DefaultLogger::OnError(char const*)" 2.0.863
- (c++)"Assimp::DefaultLogger::m_pLogger" 2.0.863
- (c++)"Assimp::DefaultLogger::DefaultLogger(Assimp::Logger::LogSeverity)" 2.0.863
- (c++)"Assimp::DefaultLogger::DefaultLogger(Assimp::Logger::LogSeverity)" 2.0.863
- (c++)"Assimp::DefaultLogger::~DefaultLogger()" 2.0.863
- (c++)"Assimp::DefaultLogger::~DefaultLogger()" 2.0.863
- (c++)"Assimp::DefaultLogger::~DefaultLogger()" 2.0.863
- (c++)"Assimp::ProgressHandler::~ProgressHandler()" 2.0.863
- (c++)"Assimp::ProgressHandler::~ProgressHandler()" 2.0.863
- (c++)"Assimp::ProgressHandler::~ProgressHandler()" 2.0.863
- (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator delete[](void*)" 2.0.863
- (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator delete(void*)" 2.0.863
- (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator new[](unsigned int)" 2.0.863
- (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator new[](unsigned int, std::nothrow_t const&)" 2.0.863
- (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator new(unsigned int)" 2.0.863
- (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator new(unsigned int, std::nothrow_t const&)" 2.0.863
- (c++)"Assimp::Logger::info(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)" 2.0.863
- (c++)"Assimp::Logger::warn(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)" 2.0.863
- (c++)"Assimp::Logger::debug(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)" 2.0.863
- (c++)"Assimp::Logger::error(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)" 2.0.863
- (c++)"Assimp::Logger::~Logger()" 2.0.863
- (c++)"Assimp::Logger::~Logger()" 2.0.863
- (c++)"Assimp::Logger::~Logger()" 2.0.863
- (c++)"Assimp::IOStream::~IOStream()" 2.0.863
- (c++)"Assimp::IOStream::~IOStream()" 2.0.863
- (c++)"Assimp::IOStream::~IOStream()" 2.0.863
- (c++)"Assimp::IOSystem::~IOSystem()" 2.0.863
- (c++)"Assimp::IOSystem::~IOSystem()" 2.0.863
- (c++)"Assimp::IOSystem::~IOSystem()" 2.0.863
- (c++)"Assimp::Importer::SetIOHandler(Assimp::IOSystem*)" 2.0.863
- (c++)"Assimp::Importer::RegisterLoader(Assimp::BaseImporter*)" 2.0.863
- (c++)"Assimp::Importer::RegisterPPStep(Assimp::BaseProcess*)" 2.0.863
- (c++)"Assimp::Importer::SetExtraVerbose(bool)" 2.0.863
- (c++)"Assimp::Importer::GetOrphanedScene()" 2.0.863
- (c++)"Assimp::Importer::SetPropertyFloat(char const*, float, bool*)" 2.0.863
- (c++)"Assimp::Importer::UnregisterLoader(Assimp::BaseImporter*)" 2.0.863
- (c++)"Assimp::Importer::UnregisterPPStep(Assimp::BaseProcess*)" 2.0.863
- (c++)"Assimp::Importer::SetPropertyString(char const*, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool*)" 2.0.863
- (c++)"Assimp::Importer::ReadFileFromMemory(void const*, unsigned int, unsigned int, char const*)" 2.0.863
- (c++)"Assimp::Importer::SetProgressHandler(Assimp::ProgressHandler*)" 2.0.863
- (c++)"Assimp::Importer::SetPropertyInteger(char const*, int, bool*)" 2.0.863
- (c++)"Assimp::Importer::ApplyPostProcessing(unsigned int)" 2.0.863
- (c++)"Assimp::Importer::ReadFile(char const*, unsigned int)" 2.0.863
- (c++)"Assimp::Importer::FreeScene()" 2.0.863
- (c++)"Assimp::Importer::Importer(Assimp::Importer const&)" 2.0.863
- (c++)"Assimp::Importer::Importer()" 2.0.863
- (c++)"Assimp::Importer::Importer(Assimp::Importer const&)" 2.0.863
- (c++)"Assimp::Importer::Importer()" 2.0.863
- (c++)"Assimp::Importer::~Importer()" 2.0.863
- (c++)"Assimp::Importer::~Importer()" 2.0.863
- (c++)"Assimp::LogStream::createDefaultStream(aiDefaultLogStream, char const*, Assimp::IOSystem*)" 2.0.863
- (c++)"Assimp::LogStream::~LogStream()" 2.0.863
- (c++)"Assimp::LogStream::~LogStream()" 2.0.863
- (c++)"Assimp::LogStream::~LogStream()" 2.0.863
- (c++)"Assimp::IOSystem::ComparePaths(char const*, char const*) const" 2.0.863
- (c++)"Assimp::Importer::FindLoader(char const*) const" 2.0.863
- (c++)"Assimp::Importer::GetIOHandler() const" 2.0.863
- (c++)"Assimp::Importer::ValidateFlags(unsigned int) const" 2.0.863
- (c++)"Assimp::Importer::GetErrorString() const" 2.0.863
- (c++)"Assimp::Importer::GetExtensionList(aiString&) const" 2.0.863
- (c++)"Assimp::Importer::GetPropertyFloat(char const*, float) const" 2.0.863
- (c++)"Assimp::Importer::GetPropertyString(char const*, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const" 2.0.863
- (c++)"Assimp::Importer::GetProgressHandler() const" 2.0.863
- (c++)"Assimp::Importer::GetPropertyInteger(char const*, int) const" 2.0.863
- (c++)"Assimp::Importer::IsDefaultIOHandler() const" 2.0.863
- (c++)"Assimp::Importer::IsExtensionSupported(char const*) const" 2.0.863
- (c++)"Assimp::Importer::GetMemoryRequirements(aiMemoryInfo&) const" 2.0.863
- (c++)"Assimp::Importer::IsDefaultProgressHandler() const" 2.0.863
- (c++)"Assimp::Importer::GetScene() const" 2.0.863
- (c++)"Assimp::Blender::MDeformVert* std::vector<Assimp::Blender::MDeformVert, std::allocator<Assimp::Blender::MDeformVert> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<Assimp::Blender::MDeformVert const*, std::vector<Assimp::Blender::MDeformVert, std::allocator<Assimp::Blender::MDeformVert> > > >(unsigned int, __gnu_cxx::__normal_iterator<Assimp::Blender::MDeformVert const*, std::vector<Assimp::Blender::MDeformVert, std::allocator<Assimp::Blender::MDeformVert> > >, __gnu_cxx::__normal_iterator<Assimp::Blender::MDeformVert const*, std::vector<Assimp::Blender::MDeformVert, std::allocator<Assimp::Blender::MDeformVert> > >)" 2.0.863
- (c++)"aiVectorKey* std::__move_merge<__gnu_cxx::__normal_iterator<aiVectorKey*, std::vector<aiVectorKey, std::allocator<aiVectorKey> > >, __gnu_cxx::__normal_iterator<aiVectorKey*, std::vector<aiVectorKey, std::allocator<aiVectorKey> > >, aiVectorKey*>(__gnu_cxx::__normal_iterator<aiVectorKey*, std::vector<aiVectorKey, std::allocator<aiVectorKey> > >, __gnu_cxx::__normal_iterator<aiVectorKey*, std::vector<aiVectorKey, std::allocator<aiVectorKey> > >, __gnu_cxx::__normal_iterator<aiVectorKey*, std::vector<aiVectorKey, std::allocator<aiVectorKey> > >, __gnu_cxx::__normal_iterator<aiVectorKey*, std::vector<aiVectorKey, std::allocator<aiVectorKey> > >, aiVectorKey*)" 2.0.863
- (c++)"aiQuatKey* std::__move_merge<__gnu_cxx::__normal_iterator<aiQuatKey*, std::vector<aiQuatKey, std::allocator<aiQuatKey> > >, __gnu_cxx::__normal_iterator<aiQuatKey*, std::vector<aiQuatKey, std::allocator<aiQuatKey> > >, aiQuatKey*>(__gnu_cxx::__normal_iterator<aiQuatKey*, std::vector<aiQuatKey, std::allocator<aiQuatKey> > >, __gnu_cxx::__normal_iterator<aiQuatKey*, std::vector<aiQuatKey, std::allocator<aiQuatKey> > >, __gnu_cxx::__normal_iterator<aiQuatKey*, std::vector<aiQuatKey, std::allocator<aiQuatKey> > >, __gnu_cxx::__normal_iterator<aiQuatKey*, std::vector<aiQuatKey, std::allocator<aiQuatKey> > >, aiQuatKey*)" 2.0.863
- (c++)"Assimp::D3DS::aiFloatKey* std::__move_merge<__gnu_cxx::__normal_iterator<Assimp::D3DS::aiFloatKey*, std::vector<Assimp::D3DS::aiFloatKey, std::allocator<Assimp::D3DS::aiFloatKey> > >, __gnu_cxx::__normal_iterator<Assimp::D3DS::aiFloatKey*, std::vector<Assimp::D3DS::aiFloatKey, std::allocator<Assimp::D3DS::aiFloatKey> > >, Assimp::D3DS::aiFloatKey*>(__gnu_cxx::__normal_iterator<Assimp::D3DS::aiFloatKey*, std::vector<Assimp::D3DS::aiFloatKey, std::allocator<Assimp::D3DS::aiFloatKey> > >, __gnu_cxx::__normal_iterator<Assimp::D3DS::aiFloatKey*, std::vector<Assimp::D3DS::aiFloatKey, std::allocator<Assimp::D3DS::aiFloatKey> > >, __gnu_cxx::__normal_iterator<Assimp::D3DS::aiFloatKey*, std::vector<Assimp::D3DS::aiFloatKey, std::allocator<Assimp::D3DS::aiFloatKey> > >, __gnu_cxx::__normal_iterator<Assimp::D3DS::aiFloatKey*, std::vector<Assimp::D3DS::aiFloatKey, std::allocator<Assimp::D3DS::aiFloatKey> > >, Assimp::D3DS::aiFloatKey*)" 2.0.863
- (c++)"aiQuatKey* std::__copy_move_a<false, aiQuatKey*, aiQuatKey*>(aiQuatKey*, aiQuatKey*, aiQuatKey*)" 2.0.863
- (c++)"Assimp::NFFImporter::MeshInfo* std::copy_backward<Assimp::NFFImporter::MeshInfo*, Assimp::NFFImporter::MeshInfo*>(Assimp::NFFImporter::MeshInfo*, Assimp::NFFImporter::MeshInfo*, Assimp::NFFImporter::MeshInfo*)" 2.0.863
- (c++)"aiVectorKey* std::__copy_move_backward_a<false, aiVectorKey*, aiVectorKey*>(aiVectorKey*, aiVectorKey*, aiVectorKey*)" 2.0.863
- (c++)"aiQuatKey* std::__copy_move_backward_a<false, aiQuatKey*, aiQuatKey*>(aiQuatKey*, aiQuatKey*, aiQuatKey*)" 2.0.863
- (c++)"aiMatrix4x4* std::__uninitialized_move_a<aiMatrix4x4*, aiMatrix4x4*, std::allocator<aiMatrix4x4> >(aiMatrix4x4*, aiMatrix4x4*, aiMatrix4x4*, std::allocator<aiMatrix4x4>&)" 2.0.863
+ (c++)"aiMaterial::~aiMaterial()@Base" 2.0.863
+ (c++)"aiMaterial::~aiMaterial()@Base" 2.0.863
+ (c++)"Assimp::NullLogger::attachStream(Assimp::LogStream*, unsigned int)@Base" 2.0.863
+ (c++)"Assimp::NullLogger::detatchStream(Assimp::LogStream*, unsigned int)@Base" 2.0.863
+ (c++)"Assimp::NullLogger::OnInfo(char const*)@Base" 2.0.863
+ (c++)"Assimp::NullLogger::OnWarn(char const*)@Base" 2.0.863
+ (c++)"Assimp::NullLogger::OnDebug(char const*)@Base" 2.0.863
+ (c++)"Assimp::NullLogger::OnError(char const*)@Base" 2.0.863
+ (c++)"Assimp::NullLogger::~NullLogger()@Base" 2.0.863
+ (c++)"Assimp::NullLogger::~NullLogger()@Base" 2.0.863
+ (c++)"Assimp::NullLogger::~NullLogger()@Base" 2.0.863
+ (c++)"Assimp::DefaultLogger::GetThreadID()@Base" 2.0.863
+ (c++)"Assimp::DefaultLogger::attachStream(Assimp::LogStream*, unsigned int)@Base" 2.0.863
+ (c++)"Assimp::DefaultLogger::isNullLogger()@Base" 2.0.863
+ (c++)"Assimp::DefaultLogger::detatchStream(Assimp::LogStream*, unsigned int)@Base" 2.0.863
+ (c++)"Assimp::DefaultLogger::s_pNullLogger@Base" 2.0.863
+ (c++)"Assimp::DefaultLogger::WriteToStreams(char const*, Assimp::Logger::ErrorSeverity)@Base" 2.0.863
+ (c++)"Assimp::DefaultLogger::get()@Base" 2.0.863
+ (c++)"Assimp::DefaultLogger::set(Assimp::Logger*)@Base" 2.0.863
+ (c++)"Assimp::DefaultLogger::kill()@Base" 2.0.863
+ (c++)"Assimp::DefaultLogger::OnInfo(char const*)@Base" 2.0.863
+ (c++)"Assimp::DefaultLogger::OnWarn(char const*)@Base" 2.0.863
+ (c++)"Assimp::DefaultLogger::create(char const*, Assimp::Logger::LogSeverity, unsigned int, Assimp::IOSystem*)@Base" 2.0.863
+ (c++)"Assimp::DefaultLogger::OnDebug(char const*)@Base" 2.0.863
+ (c++)"Assimp::DefaultLogger::OnError(char const*)@Base" 2.0.863
+ (c++)"Assimp::DefaultLogger::m_pLogger@Base" 2.0.863
+ (c++)"Assimp::DefaultLogger::DefaultLogger(Assimp::Logger::LogSeverity)@Base" 2.0.863
+ (c++)"Assimp::DefaultLogger::DefaultLogger(Assimp::Logger::LogSeverity)@Base" 2.0.863
+ (c++)"Assimp::DefaultLogger::~DefaultLogger()@Base" 2.0.863
+ (c++)"Assimp::DefaultLogger::~DefaultLogger()@Base" 2.0.863
+ (c++)"Assimp::DefaultLogger::~DefaultLogger()@Base" 2.0.863
+ (c++)"Assimp::ProgressHandler::~ProgressHandler()@Base" 2.0.863
+ (c++)"Assimp::ProgressHandler::~ProgressHandler()@Base" 2.0.863
+ (c++)"Assimp::ProgressHandler::~ProgressHandler()@Base" 2.0.863
+ (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator delete[](void*)@Base" 2.0.863
+ (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator delete(void*)@Base" 2.0.863
+ (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator new[](unsigned int)@Base" 2.0.863
+ (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator new[](unsigned int, std::nothrow_t const&)@Base" 2.0.863
+ (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator new(unsigned int)@Base" 2.0.863
+ (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator new(unsigned int, std::nothrow_t const&)@Base" 2.0.863
+ (c++)"Assimp::Logger::info(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 2.0.863
+ (c++)"Assimp::Logger::warn(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 2.0.863
+ (c++)"Assimp::Logger::debug(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 2.0.863
+ (c++)"Assimp::Logger::error(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 2.0.863
+ (c++)"Assimp::Logger::~Logger()@Base" 2.0.863
+ (c++)"Assimp::Logger::~Logger()@Base" 2.0.863
+ (c++)"Assimp::Logger::~Logger()@Base" 2.0.863
+ (c++)"Assimp::IOStream::~IOStream()@Base" 2.0.863
+ (c++)"Assimp::IOStream::~IOStream()@Base" 2.0.863
+ (c++)"Assimp::IOStream::~IOStream()@Base" 2.0.863
+ (c++)"Assimp::IOSystem::~IOSystem()@Base" 2.0.863
+ (c++)"Assimp::IOSystem::~IOSystem()@Base" 2.0.863
+ (c++)"Assimp::IOSystem::~IOSystem()@Base" 2.0.863
+ (c++)"Assimp::Importer::SetIOHandler(Assimp::IOSystem*)@Base" 2.0.863
+ (c++)"Assimp::Importer::RegisterLoader(Assimp::BaseImporter*)@Base" 2.0.863
+ (c++)"Assimp::Importer::RegisterPPStep(Assimp::BaseProcess*)@Base" 2.0.863
+ (c++)"Assimp::Importer::SetExtraVerbose(bool)@Base" 2.0.863
+ (c++)"Assimp::Importer::GetOrphanedScene()@Base" 2.0.863
+ (c++)"Assimp::Importer::SetPropertyFloat(char const*, float, bool*)@Base" 2.0.863
+ (c++)"Assimp::Importer::UnregisterLoader(Assimp::BaseImporter*)@Base" 2.0.863
+ (c++)"Assimp::Importer::UnregisterPPStep(Assimp::BaseProcess*)@Base" 2.0.863
+ (c++)"Assimp::Importer::SetPropertyString(char const*, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool*)@Base" 2.0.863
+ (c++)"Assimp::Importer::ReadFileFromMemory(void const*, unsigned int, unsigned int, char const*)@Base" 2.0.863
+ (c++)"Assimp::Importer::SetProgressHandler(Assimp::ProgressHandler*)@Base" 2.0.863
+ (c++)"Assimp::Importer::SetPropertyInteger(char const*, int, bool*)@Base" 2.0.863
+ (c++)"Assimp::Importer::ApplyPostProcessing(unsigned int)@Base" 2.0.863
+ (c++)"Assimp::Importer::ReadFile(char const*, unsigned int)@Base" 2.0.863
+ (c++)"Assimp::Importer::FreeScene()@Base" 2.0.863
+ (c++)"Assimp::Importer::Importer(Assimp::Importer const&)@Base" 2.0.863
+ (c++)"Assimp::Importer::Importer()@Base" 2.0.863
+ (c++)"Assimp::Importer::Importer(Assimp::Importer const&)@Base" 2.0.863
+ (c++)"Assimp::Importer::Importer()@Base" 2.0.863
+ (c++)"Assimp::Importer::~Importer()@Base" 2.0.863
+ (c++)"Assimp::Importer::~Importer()@Base" 2.0.863
+ (c++)"Assimp::LogStream::createDefaultStream(aiDefaultLogStream, char const*, Assimp::IOSystem*)@Base" 2.0.863
+ (c++)"Assimp::LogStream::~LogStream()@Base" 2.0.863
+ (c++)"Assimp::LogStream::~LogStream()@Base" 2.0.863
+ (c++)"Assimp::LogStream::~LogStream()@Base" 2.0.863
+ (c++)"Assimp::IOSystem::ComparePaths(char const*, char const*) const@Base" 2.0.863
+ (c++)"Assimp::Importer::FindLoader(char const*) const@Base" 2.0.863
+ (c++)"Assimp::Importer::GetIOHandler() const@Base" 2.0.863
+ (c++)"Assimp::Importer::ValidateFlags(unsigned int) const@Base" 2.0.863
+ (c++)"Assimp::Importer::GetErrorString() const@Base" 2.0.863
+ (c++)"Assimp::Importer::GetExtensionList(aiString&) const@Base" 2.0.863
+ (c++)"Assimp::Importer::GetPropertyFloat(char const*, float) const@Base" 2.0.863
+ (c++)"Assimp::Importer::GetPropertyString(char const*, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const@Base" 2.0.863
+ (c++)"Assimp::Importer::GetProgressHandler() const@Base" 2.0.863
+ (c++)"Assimp::Importer::GetPropertyInteger(char const*, int) const@Base" 2.0.863
+ (c++)"Assimp::Importer::IsDefaultIOHandler() const@Base" 2.0.863
+ (c++)"Assimp::Importer::IsExtensionSupported(char const*) const@Base" 2.0.863
+ (c++)"Assimp::Importer::GetMemoryRequirements(aiMemoryInfo&) const@Base" 2.0.863
+ (c++)"Assimp::Importer::IsDefaultProgressHandler() const@Base" 2.0.863
+ (c++)"Assimp::Importer::GetScene() const@Base" 2.0.863
+ (c++)"Assimp::Blender::MDeformVert* std::vector<Assimp::Blender::MDeformVert, std::allocator<Assimp::Blender::MDeformVert> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<Assimp::Blender::MDeformVert const*, std::vector<Assimp::Blender::MDeformVert, std::allocator<Assimp::Blender::MDeformVert> > > >(unsigned int, __gnu_cxx::__normal_iterator<Assimp::Blender::MDeformVert const*, std::vector<Assimp::Blender::MDeformVert, std::allocator<Assimp::Blender::MDeformVert> > >, __gnu_cxx::__normal_iterator<Assimp::Blender::MDeformVert const*, std::vector<Assimp::Blender::MDeformVert, std::allocator<Assimp::Blender::MDeformVert> > >)@Base" 2.0.863
+ (c++)"aiVectorKey* std::__move_merge<__gnu_cxx::__normal_iterator<aiVectorKey*, std::vector<aiVectorKey, std::allocator<aiVectorKey> > >, __gnu_cxx::__normal_iterator<aiVectorKey*, std::vector<aiVectorKey, std::allocator<aiVectorKey> > >, aiVectorKey*>(__gnu_cxx::__normal_iterator<aiVectorKey*, std::vector<aiVectorKey, std::allocator<aiVectorKey> > >, __gnu_cxx::__normal_iterator<aiVectorKey*, std::vector<aiVectorKey, std::allocator<aiVectorKey> > >, __gnu_cxx::__normal_iterator<aiVectorKey*, std::vector<aiVectorKey, std::allocator<aiVectorKey> > >, __gnu_cxx::__normal_iterator<aiVectorKey*, std::vector<aiVectorKey, std::allocator<aiVectorKey> > >, aiVectorKey*)@Base" 2.0.863
+ (c++)"aiQuatKey* std::__move_merge<__gnu_cxx::__normal_iterator<aiQuatKey*, std::vector<aiQuatKey, std::allocator<aiQuatKey> > >, __gnu_cxx::__normal_iterator<aiQuatKey*, std::vector<aiQuatKey, std::allocator<aiQuatKey> > >, aiQuatKey*>(__gnu_cxx::__normal_iterator<aiQuatKey*, std::vector<aiQuatKey, std::allocator<aiQuatKey> > >, __gnu_cxx::__normal_iterator<aiQuatKey*, std::vector<aiQuatKey, std::allocator<aiQuatKey> > >, __gnu_cxx::__normal_iterator<aiQuatKey*, std::vector<aiQuatKey, std::allocator<aiQuatKey> > >, __gnu_cxx::__normal_iterator<aiQuatKey*, std::vector<aiQuatKey, std::allocator<aiQuatKey> > >, aiQuatKey*)@Base" 2.0.863
+ (c++)"Assimp::D3DS::aiFloatKey* std::__move_merge<__gnu_cxx::__normal_iterator<Assimp::D3DS::aiFloatKey*, std::vector<Assimp::D3DS::aiFloatKey, std::allocator<Assimp::D3DS::aiFloatKey> > >, __gnu_cxx::__normal_iterator<Assimp::D3DS::aiFloatKey*, std::vector<Assimp::D3DS::aiFloatKey, std::allocator<Assimp::D3DS::aiFloatKey> > >, Assimp::D3DS::aiFloatKey*>(__gnu_cxx::__normal_iterator<Assimp::D3DS::aiFloatKey*, std::vector<Assimp::D3DS::aiFloatKey, std::allocator<Assimp::D3DS::aiFloatKey> > >, __gnu_cxx::__normal_iterator<Assimp::D3DS::aiFloatKey*, std::vector<Assimp::D3DS::aiFloatKey, std::allocator<Assimp::D3DS::aiFloatKey> > >, __gnu_cxx::__normal_iterator<Assimp::D3DS::aiFloatKey*, std::vector<Assimp::D3DS::aiFloatKey, std::allocator<Assimp::D3DS::aiFloatKey> > >, __gnu_cxx::__normal_iterator<Assimp::D3DS::aiFloatKey*, std::vector<Assimp::D3DS::aiFloatKey, std::allocator<Assimp::D3DS::aiFloatKey> > >, Assimp::D3DS::aiFloatKey*)@Base" 2.0.863
+ (c++)"aiQuatKey* std::__copy_move_a<false, aiQuatKey*, aiQuatKey*>(aiQuatKey*, aiQuatKey*, aiQuatKey*)@Base" 2.0.863
+ (c++)"Assimp::NFFImporter::MeshInfo* std::copy_backward<Assimp::NFFImporter::MeshInfo*, Assimp::NFFImporter::MeshInfo*>(Assimp::NFFImporter::MeshInfo*, Assimp::NFFImporter::MeshInfo*, Assimp::NFFImporter::MeshInfo*)@Base" 2.0.863
+ (c++)"aiVectorKey* std::__copy_move_backward_a<false, aiVectorKey*, aiVectorKey*>(aiVectorKey*, aiVectorKey*, aiVectorKey*)@Base" 2.0.863
+ (c++)"aiQuatKey* std::__copy_move_backward_a<false, aiQuatKey*, aiQuatKey*>(aiQuatKey*, aiQuatKey*, aiQuatKey*)@Base" 2.0.863
+ (c++)"aiMatrix4x4* std::__uninitialized_move_a<aiMatrix4x4*, aiMatrix4x4*, std::allocator<aiMatrix4x4> >(aiMatrix4x4*, aiMatrix4x4*, aiMatrix4x4*, std::allocator<aiMatrix4x4>&)@Base" 2.0.863
  aiApplyPostProcessing@Base 2.0.863
  aiAttachLogStream@Base 2.0.863
  aiCreateQuaternionFromMatrix@Base 2.0.863
