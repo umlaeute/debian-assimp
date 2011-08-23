@@ -2,8 +2,13 @@
 	global:
 		ai*;
 		extern "C++" {
-		 Assimp::*;
-		 ai*;
+                 Assimp::Base*;
+                 Assimp::IO*;
+                 Assimp::*Logger*;
+                 Assimp::Importer*;
+                 Assimp::LogStream*;
+                 Assimp::ProgressHandler*;
+                 Assimp::Intern*;
 		};
 	local:
 		*;
