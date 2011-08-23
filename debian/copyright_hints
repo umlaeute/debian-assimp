@@ -359,12 +359,15 @@ Files: CHANGES
  debian/libassimp2-d-dev.install
  debian/libassimp2.install
  debian/libassimp2.symbols
+ debian/libassimp2.ver
  debian/patches/doxygen.patch
  debian/patches/fix_spelling.patch
+ debian/patches/hide-internal-classes.patch
  debian/patches/no_boost_workaround.patch
  debian/patches/pyassimp.patch
  debian/patches/series
  debian/patches/use_system_zlib.patch
+ debian/patches/visibility.patch
  debian/python-pyassimp.docs
  debian/python-pyassimp.install
  debian/setup.py
