@@ -1,0 +1,51 @@
+Author: IOhannes m zmölnig
+Description: add macro to override architecture-defines for mere printout
+--- assimp.orig/code/Importer.cpp
++++ assimp/code/Importer.cpp
+@@ -898,7 +898,9 @@
+ 		<< "." 
+ 		<< aiGetVersionRevision()
+ 
+-#if defined(ASSIMP_BUILD_X86_32BIT_ARCHITECTURE)
++#if defined(ASSIMP_BUILD_ARCHITECTURE)
++		<< " " << ASSIMP_BUILD_ARCHITECTURE
++#elif defined(ASSIMP_BUILD_X86_32BIT_ARCHITECTURE)
+ 		<< " x86"
+ #elif defined(ASSIMP_BUILD_X86_64BIT_ARCHITECTURE)
+ 		<< " amd64"
+@@ -910,7 +912,9 @@
+ #	error unknown architecture
+ #endif
+ 
+-#if defined(_MSC_VER)
++#if defined(ASSIMP_BUILD_COMPILER)
++		<< " " << ASSIMP_BUILD_COMPILER
++#elif defined(_MSC_VER)
+ 		<< " msvc"
+ #elif defined(__GNUC__)
+ 		<< " gcc"
+--- assimp.orig/include/aiDefines.h
++++ assimp/include/aiDefines.h
+@@ -229,6 +229,8 @@
+ #		define ASSIMP_BUILD_X86_64BIT_ARCHITECTURE
+ #	elif defined(_M_IA64)
+ #		define ASSIMP_BUILD_IA_64BIT_ARCHITECTURE
++#       elif defined(ASSIMP_BUILD_ARCHITECTURE)
++
+ #	else
+ #		error unknown architecture
+ #	endif
+@@ -238,8 +240,12 @@
+ #		define ASSIMP_BUILD_X86_32BIT_ARCHITECTURE
+ #	elif defined(__x86_64__)
+ #		define ASSIMP_BUILD_X86_64BIT_ARCHITECTURE
+-#	elif defined(__ppc__)
++#	elif defined(__ppc__) || defined(__powerpc__)
+ #		define ASSIMP_BUILD_PPC_32BIT_ARCHITECTURE
++#	elif defined(__ia64__)
++#		define ASSIMP_BUILD_IA_64BIT_ARCHITECTURE
++#       elif defined(ASSIMP_BUILD_ARCHITECTURE)
++
+ #	else
+ #		error unknown architecture
+ #	endif

@@ -5,4 +5,4 @@ pyassimp.patch
 visibility.patch
 hide-internal-classes.patch
 doxygen.patch
-missing-architectures.patch
+missing_architectures.patch
