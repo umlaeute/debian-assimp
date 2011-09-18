@@ -1,0 +1,50 @@
+Author: IOhannes m zmölnig
+Description: add missing ASSIMP_BUILD_*_ARCHITECTUREs
+--- assimp.orig/code/Importer.cpp
++++ assimp/code/Importer.cpp
+@@ -906,6 +906,17 @@
+ 		<< " itanium"
+ #elif defined(ASSIMP_BUILD_PPC_32BIT_ARCHITECTURE)
+ 		<< " ppc32"
++#elif defined(ASSIMP_BUILD_PPC_64BIT_ARCHITECTURE)
++		<< " ppc64"
++#elif defined(ASSIMP_BUILD_ARM_32BIT_ARCHITECTURE)
++		<< " arm"
++#elif defined(ASSIMP_BUILD_MIPS_32BIT_ARCHITECTURE)
++		<< " mips"
++#elif defined(ASSIMP_BUILD_S390_32BIT_ARCHITECTURE)
++		<< " s390"
++#elif defined(ASSIMP_BUILD_SPARC_64BIT_ARCHITECTURE)
++		<< " sparc"
++
+ #else
+ #	error unknown architecture
+ #endif
+--- assimp.orig/include/aiDefines.h
++++ assimp/include/aiDefines.h
+@@ -238,8 +238,24 @@
+ #		define ASSIMP_BUILD_X86_32BIT_ARCHITECTURE
+ #	elif defined(__x86_64__)
+ #		define ASSIMP_BUILD_X86_64BIT_ARCHITECTURE
+-#	elif defined(__ppc__)
++#	elif defined(__ppc__) || defined(__powerpc__)
+ #		define ASSIMP_BUILD_PPC_32BIT_ARCHITECTURE
++#	elif defined(__powerpc64__)
++#		define ASSIMP_BUILD_PPC_64BIT_ARCHITECTURE
++#	elif defined(__arm__)
++#		define ASSIMP_BUILD_ARM_32BIT_ARCHITECTURE
++#	elif defined(__ia64__)
++#		define ASSIMP_BUILD_IA_64BIT_ARCHITECTURE
++#	elif defined(__mips__)
++/* on debian, this could be 32bit or 64bit */
++#		define ASSIMP_BUILD_MIPS_32BIT_ARCHITECTURE
++#	elif defined(__s390__)
++/* on debian, this could be 32bit or 64bit */
++#		define ASSIMP_BUILD_S390_32BIT_ARCHITECTURE
++#	elif defined(__sparc__)
++/* on debian, this should only be 64bit */
++#		define ASSIMP_BUILD_SPARC_64BIT_ARCHITECTURE
++
+ #	else
+ #		error unknown architecture
+ #	endif
