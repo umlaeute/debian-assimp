@@ -42,8 +42,6 @@ include /usr/share/pkg-kde-tools/makefiles/1/cdbs/symbolshelper.mk
 DEB_PYTHON_SETUP_CMD = debian/setup.py
 include /usr/share/cdbs/1/class/python-distutils.mk
 
-CFLAGS+=-D'ASSIMP_BUILD_ARCHITECTURE="$(DEB_HOST_ARCH)"'
-CXXFLAGS+=-D'ASSIMP_BUILD_ARCHITECTURE="$(DEB_HOST_ARCH)"'
 LDFLAGS+=-Wl,--as-needed
 
 ## to get new sources, use
@@ -68,8 +66,7 @@ DEB_COPYRIGHT_CHECK_IGNORE_REGEX = ^((Documentation|CommandLine).chm|tools\/assi
 
 DEB_DH_MAKESHLIBS_ARGS_ALL := -- -v$(DEB_UPSTREAM_VERSION)
 
-DEB_CMAKE_EXTRA_FLAGS=-DUSE_BUILTIN_ZLIB=OFF -DCMAKE_SHARED_LINKER_FLAGS="-Wl,--version-script=$(CURDIR)/debian/libassimp2.ver"
-
+DEB_CMAKE_EXTRA_FLAGS=-DUSE_BUILTIN_ZLIB=OFF -DCMAKE_SHARED_LINKER_FLAGS="-Wl,--version-script=$(CURDIR)/debian/libassimp2.ver" -DBUILD_ASSIMP_ARCHITECTURE=$(DEB_HOST_ARCH)
 
 build/libassimp-doc::
 	cd doc && doxygen Doxyfile
