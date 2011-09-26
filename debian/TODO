@@ -1,1 +1,2 @@
-FTBFS on armel, ia64, mips, mipsel, powerpc, s390, sparc
+ * make -dbg package
+ * make mono package for C# bindings
