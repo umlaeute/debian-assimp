@@ -66,7 +66,7 @@ DEB_COPYRIGHT_CHECK_IGNORE_REGEX = ^((Documentation|CommandLine).chm|tools\/assi
 
 DEB_DH_MAKESHLIBS_ARGS_ALL := -- -v$(DEB_UPSTREAM_VERSION)
 
-DEB_CMAKE_EXTRA_FLAGS=-DUSE_BUILTIN_ZLIB=OFF -DCMAKE_SHARED_LINKER_FLAGS="-Wl,--version-script=$(CURDIR)/debian/libassimp2.ver" -DBUILD_ASSIMP_ARCHITECTURE=$(DEB_HOST_ARCH)
+DEB_CMAKE_EXTRA_FLAGS=-DUSE_BUILTIN_ZLIB=OFF -DCMAKE_SHARED_LINKER_FLAGS="-Wl,--version-script=$(CURDIR)/debian/libassimp2.ver" -DASSIMP_BUILD_ARCHITECTURE=$(DEB_HOST_ARCH)
 
 build/libassimp-doc::
 	cd doc && doxygen Doxyfile
