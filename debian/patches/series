@@ -6,3 +6,4 @@ visibility.patch
 hide-internal-classes.patch
 doxygen.patch
 missing_architectures.patch
+printf_format.patch
