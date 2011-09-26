@@ -1,2 +1,4 @@
 doc/assimp_html/dragonsplash.png usr/share/doc/libassimp-doc/apiref
 doc/AssimpDoc_Html/* usr/share/doc/libassimp-doc/apiref
+samples/SimpleOpenGL/ usr/share/doc/libassimp-doc/samples
+usr/share/doc/libassimp-doc/samples usr/share/doc/libassimp-doc

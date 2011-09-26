@@ -77,6 +77,11 @@ build/libassimp-doc::
 build/assimp-utils::
 	cd doc && doxygen Doxyfile_Cmd
 
+install/libassimp-doc::
+	install -d $(cdbs_curdestdir)/usr/share/doc/libassimp-doc/samples/SimpleOpenGL
+	install -T debian/Makefile.samples \
+		$(cdbs_curdestdir)/usr/share/doc/libassimp-doc/samples/SimpleOpenGL/GNUmakefile
+
 clean::
 	rm -rf doc/AssimpCmdDoc_Html/
 	rm -rf doc/AssimpDoc_Html/
