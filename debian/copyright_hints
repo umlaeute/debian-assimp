@@ -343,7 +343,9 @@ Files: CHANGES
  contrib/cppunit_note.txt
  contrib/irrXML_note.txt
  contrib/zlib_note.txt
+ debian/Makefile.samples
  debian/README.source
+ debian/TODO
  debian/assimp-utils.doc-base
  debian/assimp-utils.install
  debian/assimp-utils.manpages
@@ -363,6 +365,7 @@ Files: CHANGES
  debian/patches/doxygen.patch
  debian/patches/fix_spelling.patch
  debian/patches/hide-internal-classes.patch
+ debian/patches/missing_architectures.patch
  debian/patches/no_boost_workaround.patch
  debian/patches/pyassimp.patch
  debian/patches/series
@@ -700,15 +703,6 @@ License: UNKNOWN
 
 Files: port/Assimp.NET/Assimp.NET_DEMO/Properties/AssemblyInfo.cs
 Copyright: Microsoft 2010")
-License: UNKNOWN
- FIXME
-
-Files: debian/TODO
-Copyright: paragraph 20 
- paragraph 32 free for use however you like credits are appreciated!!!
- paragraph 32 public domain
- paragraph 32 redistribution
- paragraph 32 reuse allowed for any purpose credits appreciated
 License: UNKNOWN
  FIXME
 
