@@ -117,3 +117,21 @@ Applied-Upstream: http://assimp.svn.sourceforge.net/viewvc/assimp?view=revision&
  #endif
  
  #endif // !! INCLUDED_AI_DEFINES_H
+--- assimp.orig/CMakeLists.txt
++++ assimp/CMakeLists.txt
+@@ -70,6 +70,15 @@
+ ## hide all not-exported symbols
+ ADD_DEFINITIONS( -fvisibility=hidden )
+ 
++SET ( BUILD_ASSIMP_ARCHITECTURE "" CACHE STRING 
++	"describe the current architecture."
++)
++IF ( BUILD_ASSIMP_ARCHITECTURE STREQUAL "")
++ELSE ( BUILD_ASSIMP_ARCHITECTURE )
++	ADD_DEFINITIONS ( -D'BUILD_ASSIMP_ARCHITECTURE="${BUILD_ASSIMP_ARCHITECTURE}"' )
++ENDIF ( BUILD_ASSIMP_ARCHITECTURE )
++
++
+ ADD_SUBDIRECTORY( code/ )
+ SET ( BUILD_ASSIMP_TOOLS ON CACHE BOOL
+ 	"If the supplementary tools for Assimp are built in addition to the library."
