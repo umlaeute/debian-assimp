@@ -5,8 +5,8 @@ libassimp.so.3 libassimp3 #MINVER#
  (c++)"Assimp::NullLogger::OnWarn(char const*)@Base" 2.0.863
  (c++)"Assimp::NullLogger::OnDebug(char const*)@Base" 2.0.863
  (c++)"Assimp::NullLogger::OnError(char const*)@Base" 2.0.863
- (c++)"Assimp::NullLogger::NullLogger()@Base" 3.0~dfsg
- (c++)"Assimp::NullLogger::NullLogger()@Base" 3.0~dfsg
+ (c++)"Assimp::NullLogger::NullLogger()@Base" 3.0~
+ (c++)"Assimp::NullLogger::NullLogger()@Base" 3.0~
  (c++)"Assimp::NullLogger::~NullLogger()@Base" 2.0.863
  (c++)"Assimp::NullLogger::~NullLogger()@Base" 2.0.863
  (c++)"Assimp::NullLogger::~NullLogger()@Base" 2.0.863
@@ -30,57 +30,57 @@ libassimp.so.3 libassimp3 #MINVER#
  (c++)"Assimp::DefaultLogger::~DefaultLogger()@Base" 2.0.863
  (c++)"Assimp::DefaultLogger::~DefaultLogger()@Base" 2.0.863
  (c++)"Assimp::DefaultLogger::~DefaultLogger()@Base" 2.0.863
- (c++)"Assimp::ProgressHandler::ProgressHandler()@Base" 3.0~dfsg
- (c++)"Assimp::ProgressHandler::ProgressHandler()@Base" 3.0~dfsg
+ (c++)"Assimp::ProgressHandler::ProgressHandler()@Base" 3.0~
+ (c++)"Assimp::ProgressHandler::ProgressHandler()@Base" 3.0~
  (c++)"Assimp::ProgressHandler::~ProgressHandler()@Base" 2.0.863
  (c++)"Assimp::ProgressHandler::~ProgressHandler()@Base" 2.0.863
  (c++)"Assimp::ProgressHandler::~ProgressHandler()@Base" 2.0.863
- (c++)"Assimp::Intern::AllocateFromAssimpHeap::AllocateFromAssimpHeap()@Base" 3.0~dfsg
- (c++)"Assimp::Intern::AllocateFromAssimpHeap::AllocateFromAssimpHeap()@Base" 3.0~dfsg
+ (c++)"Assimp::Intern::AllocateFromAssimpHeap::AllocateFromAssimpHeap()@Base" 3.0~
+ (c++)"Assimp::Intern::AllocateFromAssimpHeap::AllocateFromAssimpHeap()@Base" 3.0~
  (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator delete[](void*)@Base" 2.0.863
  (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator delete(void*)@Base" 2.0.863
  (c++|subst)"Assimp::Intern::AllocateFromAssimpHeap::operator new[]({c++:size_t})@Base" 2.0.863
  (c++|subst)"Assimp::Intern::AllocateFromAssimpHeap::operator new[]({c++:size_t}, std::nothrow_t const&)@Base" 2.0.863
  (c++|subst)"Assimp::Intern::AllocateFromAssimpHeap::operator new({c++:size_t})@Base" 2.0.863
  (c++|subst)"Assimp::Intern::AllocateFromAssimpHeap::operator new({c++:size_t}, std::nothrow_t const&)@Base" 2.0.863
- (c++)"Assimp::Logger::setLogSeverity(Assimp::Logger::LogSeverity)@Base" 3.0~dfsg
+ (c++)"Assimp::Logger::setLogSeverity(Assimp::Logger::LogSeverity)@Base" 3.0~
  (c++)"Assimp::Logger::info(char const*)@Base" 2.0.863
  (c++)"Assimp::Logger::info(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 2.0.863
- (c++)"Assimp::Logger::warn(char const*)@Base" 3.0~dfsg
+ (c++)"Assimp::Logger::warn(char const*)@Base" 3.0~
  (c++)"Assimp::Logger::warn(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 2.0.863
- (c++)"Assimp::Logger::debug(char const*)@Base" 3.0~dfsg
+ (c++)"Assimp::Logger::debug(char const*)@Base" 3.0~
  (c++)"Assimp::Logger::debug(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 2.0.863
- (c++)"Assimp::Logger::error(char const*)@Base" 3.0~dfsg
+ (c++)"Assimp::Logger::error(char const*)@Base" 3.0~
  (c++)"Assimp::Logger::error(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 2.0.863
- (c++)"Assimp::Logger::Logger(Assimp::Logger::LogSeverity)@Base" 3.0~dfsg
- (c++)"Assimp::Logger::Logger()@Base" 3.0~dfsg
- (c++)"Assimp::Logger::Logger(Assimp::Logger::LogSeverity)@Base" 3.0~dfsg
- (c++)"Assimp::Logger::Logger()@Base" 3.0~dfsg
+ (c++)"Assimp::Logger::Logger(Assimp::Logger::LogSeverity)@Base" 3.0~
+ (c++)"Assimp::Logger::Logger()@Base" 3.0~
+ (c++)"Assimp::Logger::Logger(Assimp::Logger::LogSeverity)@Base" 3.0~
+ (c++)"Assimp::Logger::Logger()@Base" 3.0~
  (c++)"Assimp::Logger::~Logger()@Base" 2.0.863
  (c++)"Assimp::Logger::~Logger()@Base" 2.0.863
  (c++)"Assimp::Logger::~Logger()@Base" 2.0.863
- (c++)"Assimp::Exporter::ExportToBlob(aiScene const*, char const*, unsigned int)@Base" 3.0~dfsg
- (c++)"Assimp::Exporter::SetIOHandler(Assimp::IOSystem*)@Base" 3.0~dfsg
- (c++)"Assimp::Exporter::RegisterExporter(Assimp::Exporter::ExportFormatEntry const&)@Base" 3.0~dfsg
- (c++)"Assimp::Exporter::ExportFormatEntry::ExportFormatEntry(char const*, char const*, char const*, void (*)(char const*, Assimp::IOSystem*, aiScene const*), unsigned int)@Base" 3.0~dfsg
- (c++)"Assimp::Exporter::ExportFormatEntry::ExportFormatEntry()@Base" 3.0~dfsg
- (c++)"Assimp::Exporter::ExportFormatEntry::ExportFormatEntry(char const*, char const*, char const*, void (*)(char const*, Assimp::IOSystem*, aiScene const*), unsigned int)@Base" 3.0~dfsg
- (c++)"Assimp::Exporter::ExportFormatEntry::ExportFormatEntry()@Base" 3.0~dfsg
- (c++)"Assimp::Exporter::UnregisterExporter(char const*)@Base" 3.0~dfsg
- (c++)"Assimp::Exporter::Export(aiScene const*, char const*, char const*, unsigned int)@Base" 3.0~dfsg
- (c++)"Assimp::Exporter::FreeBlob()@Base" 3.0~dfsg
- (c++)"Assimp::Exporter::Exporter()@Base" 3.0~dfsg
- (c++)"Assimp::Exporter::Exporter()@Base" 3.0~dfsg
- (c++)"Assimp::Exporter::~Exporter()@Base" 3.0~dfsg
- (c++)"Assimp::Exporter::~Exporter()@Base" 3.0~dfsg
- (c++)"Assimp::IOStream::IOStream()@Base" 3.0~dfsg
- (c++)"Assimp::IOStream::IOStream()@Base" 3.0~dfsg
+ (c++)"Assimp::Exporter::ExportToBlob(aiScene const*, char const*, unsigned int)@Base" 3.0~
+ (c++)"Assimp::Exporter::SetIOHandler(Assimp::IOSystem*)@Base" 3.0~
+ (c++)"Assimp::Exporter::RegisterExporter(Assimp::Exporter::ExportFormatEntry const&)@Base" 3.0~
+ (c++)"Assimp::Exporter::ExportFormatEntry::ExportFormatEntry(char const*, char const*, char const*, void (*)(char const*, Assimp::IOSystem*, aiScene const*), unsigned int)@Base" 3.0~
+ (c++)"Assimp::Exporter::ExportFormatEntry::ExportFormatEntry()@Base" 3.0~
+ (c++)"Assimp::Exporter::ExportFormatEntry::ExportFormatEntry(char const*, char const*, char const*, void (*)(char const*, Assimp::IOSystem*, aiScene const*), unsigned int)@Base" 3.0~
+ (c++)"Assimp::Exporter::ExportFormatEntry::ExportFormatEntry()@Base" 3.0~
+ (c++)"Assimp::Exporter::UnregisterExporter(char const*)@Base" 3.0~
+ (c++)"Assimp::Exporter::Export(aiScene const*, char const*, char const*, unsigned int)@Base" 3.0~
+ (c++)"Assimp::Exporter::FreeBlob()@Base" 3.0~
+ (c++)"Assimp::Exporter::Exporter()@Base" 3.0~
+ (c++)"Assimp::Exporter::Exporter()@Base" 3.0~
+ (c++)"Assimp::Exporter::~Exporter()@Base" 3.0~
+ (c++)"Assimp::Exporter::~Exporter()@Base" 3.0~
+ (c++)"Assimp::IOStream::IOStream()@Base" 3.0~
+ (c++)"Assimp::IOStream::IOStream()@Base" 3.0~
  (c++)"Assimp::IOStream::~IOStream()@Base" 2.0.863
  (c++)"Assimp::IOStream::~IOStream()@Base" 2.0.863
  (c++)"Assimp::IOStream::~IOStream()@Base" 2.0.863
- (c++)"Assimp::IOSystem::Open(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 3.0~dfsg
- (c++)"Assimp::IOSystem::IOSystem()@Base" 3.0~dfsg
- (c++)"Assimp::IOSystem::IOSystem()@Base" 3.0~dfsg
+ (c++)"Assimp::IOSystem::Open(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 3.0~
+ (c++)"Assimp::IOSystem::IOSystem()@Base" 3.0~
+ (c++)"Assimp::IOSystem::IOSystem()@Base" 3.0~
  (c++)"Assimp::IOSystem::~IOSystem()@Base" 2.0.863
  (c++)"Assimp::IOSystem::~IOSystem()@Base" 2.0.863
  (c++)"Assimp::IOSystem::~IOSystem()@Base" 2.0.863
@@ -97,9 +97,9 @@ libassimp.so.3 libassimp3 #MINVER#
  (c++)"Assimp::Importer::SetProgressHandler(Assimp::ProgressHandler*)@Base" 2.0.863
  (c++)"Assimp::Importer::SetPropertyInteger(char const*, int, bool*)@Base" 2.0.863
  (c++)"Assimp::Importer::ApplyPostProcessing(unsigned int)@Base" 2.0.863
- (c++)"Assimp::Importer::Pimpl()@Base" 3.0~dfsg
+ (c++)"Assimp::Importer::Pimpl()@Base" 3.0~
  (c++)"Assimp::Importer::ReadFile(char const*, unsigned int)@Base" 2.0.863
- (c++)"Assimp::Importer::ReadFile(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int)@Base" 3.0~dfsg
+ (c++)"Assimp::Importer::ReadFile(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int)@Base" 3.0~
  (c++)"Assimp::Importer::FreeScene()@Base" 2.0.863
  (c++)"Assimp::Importer::Importer(Assimp::Importer const&)@Base" 2.0.863
  (c++)"Assimp::Importer::Importer()@Base" 2.0.863
@@ -108,58 +108,58 @@ libassimp.so.3 libassimp3 #MINVER#
  (c++)"Assimp::Importer::~Importer()@Base" 2.0.863
  (c++)"Assimp::Importer::~Importer()@Base" 2.0.863
  (c++)"Assimp::LogStream::createDefaultStream(aiDefaultLogStream, char const*, Assimp::IOSystem*)@Base" 2.0.863
- (c++)"Assimp::LogStream::LogStream()@Base" 3.0~dfsg
- (c++)"Assimp::LogStream::LogStream()@Base" 3.0~dfsg
+ (c++)"Assimp::LogStream::LogStream()@Base" 3.0~
+ (c++)"Assimp::LogStream::LogStream()@Base" 3.0~
  (c++)"Assimp::LogStream::~LogStream()@Base" 2.0.863
  (c++)"Assimp::LogStream::~LogStream()@Base" 2.0.863
  (c++)"Assimp::LogStream::~LogStream()@Base" 2.0.863
- (c++)"Assimp::Logger::getLogSeverity() const@Base" 3.0~dfsg
- (c++)"Assimp::Exporter::GetIOHandler() const@Base" 3.0~dfsg
- (c++)"Assimp::Exporter::GetErrorString() const@Base" 3.0~dfsg
- (c++)"Assimp::Exporter::GetOrphanedBlob() const@Base" 3.0~dfsg
- (c++)"Assimp::Exporter::IsDefaultIOHandler() const@Base" 3.0~dfsg
- (c++)"Assimp::Exporter::GetExportFormatCount() const@Base" 3.0~dfsg
- (c++)"Assimp::Exporter::GetExportFormatDescription(unsigned int) const@Base" 3.0~dfsg
- (c++)"Assimp::Exporter::GetBlob() const@Base" 3.0~dfsg
+ (c++)"Assimp::Logger::getLogSeverity() const@Base" 3.0~
+ (c++)"Assimp::Exporter::GetIOHandler() const@Base" 3.0~
+ (c++)"Assimp::Exporter::GetErrorString() const@Base" 3.0~
+ (c++)"Assimp::Exporter::GetOrphanedBlob() const@Base" 3.0~
+ (c++)"Assimp::Exporter::IsDefaultIOHandler() const@Base" 3.0~
+ (c++)"Assimp::Exporter::GetExportFormatCount() const@Base" 3.0~
+ (c++)"Assimp::Exporter::GetExportFormatDescription(unsigned int) const@Base" 3.0~
+ (c++)"Assimp::Exporter::GetBlob() const@Base" 3.0~
  (c++)"Assimp::IOSystem::ComparePaths(char const*, char const*) const@Base" 2.0.863
- (c++)"Assimp::IOSystem::ComparePaths(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const@Base" 3.0~dfsg
- (c++)"Assimp::IOSystem::Exists(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const@Base" 3.0~dfsg
- (c++)"Assimp::Importer::GetImporter(char const*) const@Base" 3.0~dfsg
- (c++)"Assimp::Importer::GetImporter(unsigned int) const@Base" 3.0~dfsg
+ (c++)"Assimp::IOSystem::ComparePaths(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const@Base" 3.0~
+ (c++)"Assimp::IOSystem::Exists(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const@Base" 3.0~
+ (c++)"Assimp::Importer::GetImporter(char const*) const@Base" 3.0~
+ (c++)"Assimp::Importer::GetImporter(unsigned int) const@Base" 3.0~
  (c++)"Assimp::Importer::GetIOHandler() const@Base" 2.0.863
  (c++)"Assimp::Importer::ValidateFlags(unsigned int) const@Base" 2.0.863
  (c++)"Assimp::Importer::GetErrorString() const@Base" 2.0.863
- (c++)"Assimp::Importer::GetImporterInfo(unsigned int) const@Base" 3.0~dfsg
- (c++)"Assimp::Importer::GetPropertyBool(char const*, bool) const@Base" 3.0~dfsg
+ (c++)"Assimp::Importer::GetImporterInfo(unsigned int) const@Base" 3.0~
+ (c++)"Assimp::Importer::GetPropertyBool(char const*, bool) const@Base" 3.0~
  (c++)"Assimp::Importer::GetExtensionList(aiString&) const@Base" 2.0.863
- (c++)"Assimp::Importer::GetImporterCount() const@Base" 3.0~dfsg
- (c++)"Assimp::Importer::GetImporterIndex(char const*) const@Base" 3.0~dfsg
+ (c++)"Assimp::Importer::GetImporterCount() const@Base" 3.0~
+ (c++)"Assimp::Importer::GetImporterIndex(char const*) const@Base" 3.0~
  (c++)"Assimp::Importer::GetPropertyFloat(char const*, float) const@Base" 2.0.863
  (c++)"Assimp::Importer::GetPropertyString(char const*, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const@Base" 2.0.863
  (c++)"Assimp::Importer::GetProgressHandler() const@Base" 2.0.863
  (c++)"Assimp::Importer::GetPropertyInteger(char const*, int) const@Base" 2.0.863
  (c++)"Assimp::Importer::IsDefaultIOHandler() const@Base" 2.0.863
  (c++)"Assimp::Importer::IsExtensionSupported(char const*) const@Base" 2.0.863
- (c++)"Assimp::Importer::IsExtensionSupported(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const@Base" 3.0~dfsg
+ (c++)"Assimp::Importer::IsExtensionSupported(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const@Base" 3.0~
  (c++)"Assimp::Importer::GetMemoryRequirements(aiMemoryInfo&) const@Base" 2.0.863
  (c++)"Assimp::Importer::IsDefaultProgressHandler() const@Base" 2.0.863
  (c++)"Assimp::Importer::GetScene() const@Base" 2.0.863
  aiApplyPostProcessing@Base 2.0.863
  aiAttachLogStream@Base 2.0.863
- aiCopyScene@Base 3.0~dfsg
- aiCreatePropertyStore@Base 3.0~dfsg
+ aiCopyScene@Base 3.0~
+ aiCreatePropertyStore@Base 3.0~
  aiCreateQuaternionFromMatrix@Base 2.0.863
  aiDecomposeMatrix@Base 2.0.863
  aiDetachAllLogStreams@Base 2.0.863
  aiDetachLogStream@Base 2.0.863
  aiEnableVerboseLogging@Base 2.0.863
- aiExportScene@Base 3.0~dfsg
- aiExportSceneEx@Base 3.0~dfsg
- aiExportSceneToBlob@Base 3.0~dfsg
+ aiExportScene@Base 3.0~
+ aiExportSceneEx@Base 3.0~
+ aiExportSceneToBlob@Base 3.0~
  aiGetCompileFlags@Base 2.0.863
  aiGetErrorString@Base 2.0.863
- aiGetExportFormatCount@Base 3.0~dfsg
- aiGetExportFormatDescription@Base 3.0~dfsg
+ aiGetExportFormatCount@Base 3.0~
+ aiGetExportFormatDescription@Base 3.0~
  aiGetExtensionList@Base 2.0.863
  aiGetLegalString@Base 2.0.863
  aiGetMaterialColor@Base 2.0.863
@@ -178,15 +178,15 @@ libassimp.so.3 libassimp3 #MINVER#
  aiIdentityMatrix4@Base 2.0.863
  aiImportFile@Base 2.0.863
  aiImportFileEx@Base 2.0.863
- aiImportFileExWithProperties@Base 3.0~dfsg
+ aiImportFileExWithProperties@Base 3.0~
  aiImportFileFromMemory@Base 2.0.863
- aiImportFileFromMemoryWithProperties@Base 3.0~dfsg
+ aiImportFileFromMemoryWithProperties@Base 3.0~
  aiIsExtensionSupported@Base 2.0.863
  aiMultiplyMatrix3@Base 2.0.863
  aiMultiplyMatrix4@Base 2.0.863
- aiReleaseExportBlob@Base 3.0~dfsg
+ aiReleaseExportBlob@Base 3.0~
  aiReleaseImport@Base 2.0.863
- aiReleasePropertyStore@Base 3.0~dfsg
+ aiReleasePropertyStore@Base 3.0~
  aiSetImportPropertyFloat@Base 2.0.863
  aiSetImportPropertyInteger@Base 2.0.863
  aiSetImportPropertyString@Base 2.0.863
