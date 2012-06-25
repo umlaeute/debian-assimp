@@ -1,3 +1,22 @@
+assimp (3.0~dfsg-1) UNRELEASED; urgency=low
+
+  * New upstream
+
+  * Imported Upstream version 3.0~dfsg
+  * Removed patches applied by upstream
+  * Refreshed patches so they apply cleanly to new upstream
+  * Build-depend on current version of libboost-dev (Closes: #678778)
+  * Renamed libassimp2 to libassimp3 due to soname change
+  * Removed D-bindings libassimp3-d-dev (deprecated upstream) (Closes: #677716)
+  * Build doxygen documentation in separate directory
+  * Bumped standards version to 3.9.3
+  * Bumped compat version to 9
+  * Excluded binaries from copyright-check
+  * Regenerated debian/(control|copyright_hints)
+  * Updated debian/copyright
+
+ -- IOhannes m zmoelnig (gpg-key at iem) <zmoelnig@iem.at>  Mon, 25 Jun 2012 10:21:04 +0200
+
 assimp (2.0.863+dfsg-2) unstable; urgency=low
 
   [ IOhannes m zmölnig ]
