@@ -1,10 +1,11 @@
 Author: IOhannes m zmölnig
-Description: simply dylib loading by using ctypes functionality
+Description: simple dylib loading by using ctypes functionality
  simplified original (complicated and somewhat broken) dylib loading
  functionality with code suggested by Jakub Wilk.
  This has not been forwarded (yet) to upstream, as it the fix will not
  work on platforms such as w32
 Forwarded: no
+Last-Updated: 2012-06-25
 --- assimp.orig/port/PyAssimp/pyassimp/helper.py
 +++ assimp/port/PyAssimp/pyassimp/helper.py
 @@ -6,59 +6,17 @@
@@ -101,7 +102,7 @@ Forwarded: no
 -                # OK, this except is evil. But different OSs will throw different
 -                # errors. So just ignore any errors.
 -                continue
-+    libassimp = 'libassimp.so.2'
++    libassimp = 'libassimp.so.3'
 +    LIBASSIMP = ctypes.CDLL(libassimp)
  
 -            try_load_functions(library,dll,candidates)
