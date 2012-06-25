@@ -3,7 +3,7 @@ from distutils.core import setup
 setup_data = dict(packages=['pyassimp', ],
                   package_dir = {'pyassimp': 'port/PyAssimp/pyassimp'},
                   name='PyAssimp',
-                  version='2.0.863',
+                  version='3.0.1264',
                   author='ASSIMP Development Team',
                   author_email='https://sourceforge.net/mailarchive/forum.php?forum_name=assimp-discussions',
                   license='BSD (3-clause)',
