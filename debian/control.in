@@ -15,7 +15,7 @@ Vcs-Git: git://git.debian.org/collab-maint/assimp
 Vcs-Browser: http://git.debian.org/?p=collab-maint/assimp.git
 
 
-Package: libassimp2
+Package: libassimp3
 Architecture: any
 Section: libs
 Depends: ${shlibs:Depends},
@@ -42,8 +42,8 @@ Package: libassimp-dev
 Architecture: any
 Section: libdevel
 Depends: ${misc:Depends},
- libassimp2 (>= ${source:Version}),
- libassimp2 (<< ${source:Upstream-Version}+1~)
+ libassimp3 (>= ${source:Version}),
+ libassimp3 (<< ${source:Upstream-Version}+1~)
 Description: 3D model import library (development)
  Assimp is a library to import various well-known 3D model formats ("assets") in
  a uniform manner.
@@ -89,8 +89,8 @@ Architecture: all
 Section: python
 Depends: ${python:Depends},
  ${misc:Depends},
- libassimp2 (>= ${source:Version}),
- libassimp2 (<< ${source:Upstream-Version}+1~)
+ libassimp3 (>= ${source:Version}),
+ libassimp3 (<< ${source:Upstream-Version}+1~)
 Description: 3D model import library (Python bindings)
  Assimp is a library to import various well-known 3D model formats ("assets") in
  a uniform manner.
@@ -100,13 +100,13 @@ Description: 3D model import library (Python bindings)
  .
  This package provides Python bindings to the Assimp library.
 
-Package: libassimp2-d-dev
+Package: libassimp3-d-dev
 Architecture: all
 Depends: ${shlibs:Depends},
  ${misc:Depends},
  libtango-headers,
- libassimp2 (>= ${source:Version}),
- libassimp2 (<< ${source:Upstream-Version}+1~)
+ libassimp3 (>= ${source:Version}),
+ libassimp3 (<< ${source:Upstream-Version}+1~)
 Section: libdevel
 Description: 3D model import library (D bindings)
  Assimp is a library to import various well-known 3D model formats ("assets") in

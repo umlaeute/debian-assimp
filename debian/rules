@@ -17,8 +17,8 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-## assimp-utils depends on libassimp2
-binary/assimp-utils:: binary/libassimp2
+## assimp-utils depends on libassimp3
+binary/assimp-utils:: binary/libassimp3
 
 # trying to get clean done
 .PHONY: cleanbuilddir-force
