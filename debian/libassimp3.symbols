@@ -6,9 +6,6 @@ libassimp.so.3 libassimp3 #MINVER#
  (c++)"Assimp::NullLogger::OnDebug(char const*)@Base" 2.0.863
  (c++)"Assimp::NullLogger::OnError(char const*)@Base" 2.0.863
  (c++)"Assimp::NullLogger::NullLogger()@Base" 3.0~
- (c++)"Assimp::NullLogger::NullLogger()@Base" 3.0~
- (c++)"Assimp::NullLogger::~NullLogger()@Base" 2.0.863
- (c++)"Assimp::NullLogger::~NullLogger()@Base" 2.0.863
  (c++)"Assimp::NullLogger::~NullLogger()@Base" 2.0.863
  (c++)"Assimp::DefaultLogger::GetThreadID()@Base" 2.0.863
  (c++)"Assimp::DefaultLogger::attachStream(Assimp::LogStream*, unsigned int)@Base" 2.0.863
@@ -26,16 +23,9 @@ libassimp.so.3 libassimp3 #MINVER#
  (c++)"Assimp::DefaultLogger::OnError(char const*)@Base" 2.0.863
  (c++)"Assimp::DefaultLogger::m_pLogger@Base" 2.0.863
  (c++)"Assimp::DefaultLogger::DefaultLogger(Assimp::Logger::LogSeverity)@Base" 2.0.863
- (c++)"Assimp::DefaultLogger::DefaultLogger(Assimp::Logger::LogSeverity)@Base" 2.0.863
- (c++)"Assimp::DefaultLogger::~DefaultLogger()@Base" 2.0.863
- (c++)"Assimp::DefaultLogger::~DefaultLogger()@Base" 2.0.863
  (c++)"Assimp::DefaultLogger::~DefaultLogger()@Base" 2.0.863
  (c++)"Assimp::ProgressHandler::ProgressHandler()@Base" 3.0~
- (c++)"Assimp::ProgressHandler::ProgressHandler()@Base" 3.0~
  (c++)"Assimp::ProgressHandler::~ProgressHandler()@Base" 2.0.863
- (c++)"Assimp::ProgressHandler::~ProgressHandler()@Base" 2.0.863
- (c++)"Assimp::ProgressHandler::~ProgressHandler()@Base" 2.0.863
- (c++)"Assimp::Intern::AllocateFromAssimpHeap::AllocateFromAssimpHeap()@Base" 3.0~
  (c++)"Assimp::Intern::AllocateFromAssimpHeap::AllocateFromAssimpHeap()@Base" 3.0~
  (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator delete[](void*)@Base" 2.0.863
  (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator delete(void*)@Base" 2.0.863
@@ -54,35 +44,21 @@ libassimp.so.3 libassimp3 #MINVER#
  (c++)"Assimp::Logger::error(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 2.0.863
  (c++)"Assimp::Logger::Logger(Assimp::Logger::LogSeverity)@Base" 3.0~
  (c++)"Assimp::Logger::Logger()@Base" 3.0~
- (c++)"Assimp::Logger::Logger(Assimp::Logger::LogSeverity)@Base" 3.0~
- (c++)"Assimp::Logger::Logger()@Base" 3.0~
- (c++)"Assimp::Logger::~Logger()@Base" 2.0.863
- (c++)"Assimp::Logger::~Logger()@Base" 2.0.863
  (c++)"Assimp::Logger::~Logger()@Base" 2.0.863
  (c++)"Assimp::Exporter::ExportToBlob(aiScene const*, char const*, unsigned int)@Base" 3.0~
  (c++)"Assimp::Exporter::SetIOHandler(Assimp::IOSystem*)@Base" 3.0~
  (c++)"Assimp::Exporter::RegisterExporter(Assimp::Exporter::ExportFormatEntry const&)@Base" 3.0~
  (c++)"Assimp::Exporter::ExportFormatEntry::ExportFormatEntry(char const*, char const*, char const*, void (*)(char const*, Assimp::IOSystem*, aiScene const*), unsigned int)@Base" 3.0~
  (c++)"Assimp::Exporter::ExportFormatEntry::ExportFormatEntry()@Base" 3.0~
- (c++)"Assimp::Exporter::ExportFormatEntry::ExportFormatEntry(char const*, char const*, char const*, void (*)(char const*, Assimp::IOSystem*, aiScene const*), unsigned int)@Base" 3.0~
- (c++)"Assimp::Exporter::ExportFormatEntry::ExportFormatEntry()@Base" 3.0~
  (c++)"Assimp::Exporter::UnregisterExporter(char const*)@Base" 3.0~
  (c++)"Assimp::Exporter::Export(aiScene const*, char const*, char const*, unsigned int)@Base" 3.0~
  (c++)"Assimp::Exporter::FreeBlob()@Base" 3.0~
  (c++)"Assimp::Exporter::Exporter()@Base" 3.0~
- (c++)"Assimp::Exporter::Exporter()@Base" 3.0~
- (c++)"Assimp::Exporter::~Exporter()@Base" 3.0~
  (c++)"Assimp::Exporter::~Exporter()@Base" 3.0~
  (c++)"Assimp::IOStream::IOStream()@Base" 3.0~
- (c++)"Assimp::IOStream::IOStream()@Base" 3.0~
- (c++)"Assimp::IOStream::~IOStream()@Base" 2.0.863
- (c++)"Assimp::IOStream::~IOStream()@Base" 2.0.863
  (c++)"Assimp::IOStream::~IOStream()@Base" 2.0.863
  (c++)"Assimp::IOSystem::Open(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 3.0~
  (c++)"Assimp::IOSystem::IOSystem()@Base" 3.0~
- (c++)"Assimp::IOSystem::IOSystem()@Base" 3.0~
- (c++)"Assimp::IOSystem::~IOSystem()@Base" 2.0.863
- (c++)"Assimp::IOSystem::~IOSystem()@Base" 2.0.863
  (c++)"Assimp::IOSystem::~IOSystem()@Base" 2.0.863
  (c++)"Assimp::Importer::SetIOHandler(Assimp::IOSystem*)@Base" 2.0.863
  (c++)"Assimp::Importer::RegisterLoader(Assimp::BaseImporter*)@Base" 2.0.863
@@ -103,15 +79,9 @@ libassimp.so.3 libassimp3 #MINVER#
  (c++)"Assimp::Importer::FreeScene()@Base" 2.0.863
  (c++)"Assimp::Importer::Importer(Assimp::Importer const&)@Base" 2.0.863
  (c++)"Assimp::Importer::Importer()@Base" 2.0.863
- (c++)"Assimp::Importer::Importer(Assimp::Importer const&)@Base" 2.0.863
- (c++)"Assimp::Importer::Importer()@Base" 2.0.863
- (c++)"Assimp::Importer::~Importer()@Base" 2.0.863
  (c++)"Assimp::Importer::~Importer()@Base" 2.0.863
  (c++)"Assimp::LogStream::createDefaultStream(aiDefaultLogStream, char const*, Assimp::IOSystem*)@Base" 2.0.863
  (c++)"Assimp::LogStream::LogStream()@Base" 3.0~
- (c++)"Assimp::LogStream::LogStream()@Base" 3.0~
- (c++)"Assimp::LogStream::~LogStream()@Base" 2.0.863
- (c++)"Assimp::LogStream::~LogStream()@Base" 2.0.863
  (c++)"Assimp::LogStream::~LogStream()@Base" 2.0.863
  (c++)"Assimp::Logger::getLogSeverity() const@Base" 3.0~
  (c++)"Assimp::Exporter::GetIOHandler() const@Base" 3.0~
@@ -119,17 +89,17 @@ libassimp.so.3 libassimp3 #MINVER#
  (c++)"Assimp::Exporter::GetOrphanedBlob() const@Base" 3.0~
  (c++)"Assimp::Exporter::IsDefaultIOHandler() const@Base" 3.0~
  (c++)"Assimp::Exporter::GetExportFormatCount() const@Base" 3.0~
- (c++)"Assimp::Exporter::GetExportFormatDescription(unsigned int) const@Base" 3.0~
+ (c++|subst)"Assimp::Exporter::GetExportFormatDescription({c++:size_t}) const@Base" 3.0~
  (c++)"Assimp::Exporter::GetBlob() const@Base" 3.0~
  (c++)"Assimp::IOSystem::ComparePaths(char const*, char const*) const@Base" 2.0.863
  (c++)"Assimp::IOSystem::ComparePaths(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const@Base" 3.0~
  (c++)"Assimp::IOSystem::Exists(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const@Base" 3.0~
  (c++)"Assimp::Importer::GetImporter(char const*) const@Base" 3.0~
- (c++)"Assimp::Importer::GetImporter(unsigned int) const@Base" 3.0~
+ (c++|subst)"Assimp::Importer::GetImporter({c++:size_t}) const@Base" 3.0~
  (c++)"Assimp::Importer::GetIOHandler() const@Base" 2.0.863
  (c++)"Assimp::Importer::ValidateFlags(unsigned int) const@Base" 2.0.863
  (c++)"Assimp::Importer::GetErrorString() const@Base" 2.0.863
- (c++)"Assimp::Importer::GetImporterInfo(unsigned int) const@Base" 3.0~
+ (c++|subst)"Assimp::Importer::GetImporterInfo({c++:size_t}) const@Base" 3.0~
  (c++)"Assimp::Importer::GetPropertyBool(char const*, bool) const@Base" 3.0~
  (c++)"Assimp::Importer::GetExtensionList(aiString&) const@Base" 2.0.863
  (c++)"Assimp::Importer::GetImporterCount() const@Base" 3.0~
