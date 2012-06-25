@@ -79,7 +79,10 @@ install/libassimp-doc::
 	install -T debian/Makefile.samples \
 		$(cdbs_curdestdir)/usr/share/doc/libassimp-doc/samples/SimpleOpenGL/GNUmakefile
 
-clean::
-	rm -rf doc/AssimpCmdDoc_Html/
-	rm -rf doc/AssimpDoc_Html/
+
+.PHONY: cleandoxydocs
+clean:: cleandoxydocs
+cleandoxydocs:
+	rm -rf doc/AssimpCmdDoc_Html_tmp/
+	rm -rf doc/AssimpDoc_Html_tmp/
 
