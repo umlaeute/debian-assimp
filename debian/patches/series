@@ -1,9 +1,3 @@
-fix_spelling.patch
-use_system_zlib.patch
 no_boost_workaround.patch
 pyassimp.patch
-visibility.patch
-hide-internal-classes.patch
 doxygen.patch
-missing_architectures.patch
-printf_format.patch
