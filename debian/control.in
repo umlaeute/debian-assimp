@@ -3,7 +3,7 @@ Section: graphics
 Priority: extra
 Maintainer: IOhannes m zmoelnig (gpg-key at iem) <zmoelnig@iem.at>
 Homepage: http://assimp.sourceforge.net/
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Build-Depends: @cdbs@,
  dpkg-dev (>= 1.15.6),
  pkg-kde-tools,
