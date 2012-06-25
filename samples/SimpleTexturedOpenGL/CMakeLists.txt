@@ -17,6 +17,8 @@ ADD_EXECUTABLE( assimp_simpletexturedogl WIN32
 	SimpleTexturedOpenGL/src/model_loading.cpp
 )
 
+SET_PROPERTY(TARGET assimp_simpletexturedogl PROPERTY DEBUG_POSTFIX ${DEBUG_POSTFIX})
+
 IF( WIN32 )
 	SET( PSDK_PATH "C:/Program Files/Microsoft Platform SDK/Bin" )
 	SET( PSDK_INC "C:/Program Files/Microsoft Platform SDK/Include" )
@@ -36,5 +38,5 @@ SET_TARGET_PROPERTIES( assimp_simpletexturedogl PROPERTIES
 )
 
 INSTALL( TARGETS assimp_simpletexturedogl
-	DESTINATION "${BIN_INSTALL_DIR}"
+	DESTINATION "${BIN_INSTALL_DIR}" COMPONENT assimp-dev
 ) 
