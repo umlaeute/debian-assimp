@@ -99,21 +99,3 @@ Description: 3D model import library (Python bindings)
  audience.
  .
  This package provides Python bindings to the Assimp library.
-
-Package: libassimp3-d-dev
-Architecture: all
-Depends: ${shlibs:Depends},
- ${misc:Depends},
- libtango-headers,
- libassimp3 (>= ${source:Version}),
- libassimp3 (<< ${source:Upstream-Version}+1~)
-Section: libdevel
-Description: 3D model import library (D bindings)
- Assimp is a library to import various well-known 3D model formats ("assets") in
- a uniform manner.
- Assimp aims at providing a full asset conversion pipeline for use in game
- engines / realtime rendering systems of any kind but is not limited to this
- audience.
- .
- This package provides D bindings to the Assimp library.
-
