@@ -1,4 +1,4 @@
-Format: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?rev=174
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: FIXME
 Upstream-Contact: FIXME
 Source: FIXME
@@ -15,6 +15,7 @@ Files: code/3DSConverter.cpp
  code/ASEParser.cpp
  code/ASEParser.h
  code/Assimp.cpp
+ code/AssimpCExport.cpp
  code/AssimpPCH.h
  code/B3DImporter.cpp
  code/B3DImporter.h
@@ -32,10 +33,10 @@ Files: code/3DSConverter.cpp
  code/BlenderLoader.h
  code/BlenderModifier.cpp
  code/BlenderModifier.h
- code/BlenderScene.cpp
  code/BlenderScene.h
- code/BlenderSceneGen.h
+ code/BlobIOSystem.h
  code/ByteSwap.h
+ code/CInterfaceIOWrapper.h
  code/COBLoader.cpp
  code/COBLoader.h
  code/COBScene.h
@@ -43,6 +44,8 @@ Files: code/3DSConverter.cpp
  code/CSMLoader.h
  code/CalcTangentsProcess.cpp
  code/CalcTangentsProcess.h
+ code/ColladaExporter.cpp
+ code/ColladaExporter.h
  code/ColladaHelper.h
  code/ColladaLoader.cpp
  code/ColladaLoader.h
@@ -52,8 +55,11 @@ Files: code/3DSConverter.cpp
  code/ComputeUVMappingProcess.h
  code/ConvertToLHProcess.cpp
  code/ConvertToLHProcess.h
+ code/DXFHelper.h
  code/DXFLoader.cpp
  code/DXFLoader.h
+ code/DeboneProcess.cpp
+ code/DeboneProcess.h
  code/DefaultIOStream.cpp
  code/DefaultIOStream.h
  code/DefaultIOSystem.cpp
@@ -61,6 +67,7 @@ Files: code/3DSConverter.cpp
  code/DefaultLogger.cpp
  code/DefaultProgressHandler.h
  code/Exceptional.h
+ code/Exporter.cpp
  code/FileSystemFilter.h
  code/FindDegenerates.cpp
  code/FindDegenerates.h
@@ -79,13 +86,24 @@ Files: code/3DSConverter.cpp
  code/HMPLoader.cpp
  code/HMPLoader.h
  code/HalfLifeFileData.h
- code/Hash.h
+ code/IFCCurve.cpp
+ code/IFCGeometry.cpp
+ code/IFCLoader.cpp
+ code/IFCLoader.h
+ code/IFCMaterial.cpp
+ code/IFCProfile.cpp
+ code/IFCReaderGen.cpp
+ code/IFCReaderGen.h
+ code/IFCUtil.cpp
+ code/IFCUtil.h
  code/IRRLoader.cpp
  code/IRRLoader.h
  code/IRRMeshLoader.cpp
  code/IRRMeshLoader.h
  code/IRRShared.cpp
  code/Importer.cpp
+ code/Importer.h
+ code/ImporterRegistry.cpp
  code/ImproveCacheLocality.cpp
  code/ImproveCacheLocality.h
  code/JoinVerticesProcess.cpp
@@ -102,6 +120,9 @@ Files: code/3DSConverter.cpp
  code/LimitBoneWeightsProcess.cpp
  code/LimitBoneWeightsProcess.h
  code/LineSplitter.h
+ code/LogAux.h
+ code/M3Importer.cpp
+ code/M3Importer.h
  code/MD2FileData.h
  code/MD2Loader.cpp
  code/MD2Loader.h
@@ -109,7 +130,6 @@ Files: code/3DSConverter.cpp
  code/MD3FileData.h
  code/MD3Loader.cpp
  code/MD3Loader.h
- code/MD4FileData.h
  code/MD5Loader.cpp
  code/MD5Loader.h
  code/MD5Parser.cpp
@@ -135,6 +155,8 @@ Files: code/3DSConverter.cpp
  code/NFFLoader.h
  code/OFFLoader.cpp
  code/OFFLoader.h
+ code/ObjExporter.cpp
+ code/ObjExporter.h
  code/ObjFileData.h
  code/ObjFileImporter.cpp
  code/ObjFileImporter.h
@@ -144,18 +166,25 @@ Files: code/3DSConverter.cpp
  code/ObjFileParser.h
  code/ObjTools.h
  code/OgreImporter.cpp
- code/OgreImporterMaterial.cpp
+ code/OgreMaterial.cpp
+ code/OgreMesh.cpp
+ code/OgreSkeleton.cpp
  code/OptimizeGraph.cpp
  code/OptimizeGraph.h
  code/OptimizeMeshes.cpp
  code/OptimizeMeshes.h
  code/ParsingUtils.h
+ code/PlyExporter.cpp
+ code/PlyExporter.h
  code/PlyLoader.cpp
  code/PlyLoader.h
  code/PlyParser.cpp
  code/PlyParser.h
+ code/PolyTools.h
+ code/PostStepRegistry.cpp
  code/PretransformVertices.cpp
  code/PretransformVertices.h
+ code/ProcessHelper.cpp
  code/ProcessHelper.h
  code/Profiler.h
  code/Q3BSPFileData.h
@@ -179,12 +208,18 @@ Files: code/3DSConverter.cpp
  code/SGSpatialSort.h
  code/SMDLoader.cpp
  code/SMDLoader.h
+ code/STEPFile.h
+ code/STEPFileReader.cpp
+ code/STEPFileReader.h
+ code/STLExporter.cpp
+ code/STLExporter.h
  code/STLLoader.cpp
  code/STLLoader.h
  code/SceneCombiner.cpp
  code/SceneCombiner.h
  code/ScenePreprocessor.cpp
  code/ScenePreprocessor.h
+ code/ScenePrivate.h
  code/SkeletonMeshBuilder.cpp
  code/SkeletonMeshBuilder.h
  code/SmoothingGroups.h
@@ -193,6 +228,8 @@ Files: code/3DSConverter.cpp
  code/SortByPTypeProcess.h
  code/SpatialSort.cpp
  code/SpatialSort.h
+ code/SplitByBoneCountProcess.cpp
+ code/SplitByBoneCountProcess.h
  code/SplitLargeMeshes.cpp
  code/SplitLargeMeshes.h
  code/StandardShapes.cpp
@@ -222,70 +259,51 @@ Files: code/3DSConverter.cpp
  code/XFileImporter.h
  code/XFileParser.cpp
  code/XFileParser.h
- code/aiAssert.cpp
+ code/XGLLoader.cpp
+ code/XGLLoader.h
  code/irrXMLWrapper.h
  code/qnan.h
- include/DefaultLogger.h
- include/IOStream.h
- include/IOSystem.h
- include/LogStream.h
- include/Logger.h
- include/NullLogger.h
- include/ProgressHandler.h
- include/aiAnim.h
- include/aiCamera.h
- include/aiColor4D.h
- include/aiColor4D.inl
- include/aiConfig.h
- include/aiDefines.h
- include/aiFileIO.h
- include/aiLight.h
- include/aiMaterial.h
- include/aiMaterial.inl
- include/aiMatrix3x3.h
- include/aiMatrix4x4.h
- include/aiMatrix4x4.inl
- include/aiMesh.h
- include/aiPostProcess.h
- include/aiQuaternion.h
- include/aiScene.h
- include/aiTexture.h
- include/aiTypes.h
- include/aiVector2D.h
- include/aiVector3D.h
- include/aiVector3D.inl
- include/aiVersion.h
- include/assimp.h
- include/assimp.hpp
- port/Assimp.NET/Assimp.NET/AssimpSwigPort.i
- port/Assimp.NET/Assimp.NET_DEMO/AssimpView.Designer.cs
- port/Assimp.NET/Assimp.NET_DEMO/AssimpView.cs
- port/Assimp.NET/Assimp.NET_DEMO/Camera.cs
- port/Assimp.NET/Assimp.NET_DEMO/Display.cs
- port/Assimp.NET/Assimp.NET_DEMO/ExtensionMethods.cs
- port/Assimp.NET/Assimp.NET_DEMO/Input.cs
- port/Assimp.NET/Assimp.NET_DEMO/Program.cs
- port/dAssimp/assimp/animation.d
- port/dAssimp/assimp/api.d
- port/dAssimp/assimp/assimp.d
- port/dAssimp/assimp/camera.d
- port/dAssimp/assimp/config.d
- port/dAssimp/assimp/fileIO.d
- port/dAssimp/assimp/light.d
- port/dAssimp/assimp/loader.d
- port/dAssimp/assimp/material.d
- port/dAssimp/assimp/math.d
- port/dAssimp/assimp/mesh.d
- port/dAssimp/assimp/postprocess.d
- port/dAssimp/assimp/scene.d
- port/dAssimp/assimp/texture.d
- port/dAssimp/assimp/types.d
- port/dAssimp/assimp/versionInfo.d
- scripts/BlenderImporter/BlenderScene.cpp.template
- scripts/BlenderImporter/BlenderSceneGen.h.template
- scripts/BlenderImporter/genblenddna.py
- scripts/structsgen.py
+ doc/Preamble.txt
+ include/assimp/DefaultLogger.hpp
+ include/assimp/Exporter.hpp
+ include/assimp/IOStream.hpp
+ include/assimp/IOSystem.hpp
+ include/assimp/Importer.hpp
+ include/assimp/LogStream.hpp
+ include/assimp/Logger.hpp
+ include/assimp/NullLogger.hpp
+ include/assimp/ProgressHandler.hpp
+ include/assimp/anim.h
+ include/assimp/camera.h
+ include/assimp/cexport.h
+ include/assimp/cfileio.h
+ include/assimp/cimport.h
+ include/assimp/color4.h
+ include/assimp/color4.inl
+ include/assimp/config.h
+ include/assimp/defs.h
+ include/assimp/importerdesc.h
+ include/assimp/light.h
+ include/assimp/material.h
+ include/assimp/material.inl
+ include/assimp/matrix3x3.h
+ include/assimp/matrix3x3.inl
+ include/assimp/matrix4x4.h
+ include/assimp/matrix4x4.inl
+ include/assimp/mesh.h
+ include/assimp/postprocess.h
+ include/assimp/quaternion.h
+ include/assimp/quaternion.inl
+ include/assimp/scene.h
+ include/assimp/texture.h
+ include/assimp/types.h
+ include/assimp/vector2.h
+ include/assimp/vector2.inl
+ include/assimp/vector3.h
+ include/assimp/vector3.inl
+ include/assimp/version.h
  tools/assimp_cmd/CompareDump.cpp
+ tools/assimp_cmd/Export.cpp
  tools/assimp_cmd/ImageExtractor.cpp
  tools/assimp_cmd/Info.cpp
  tools/assimp_cmd/Main.cpp
@@ -295,6 +313,8 @@ Files: code/3DSConverter.cpp
  tools/assimp_view/AnimEvaluator.h
  tools/assimp_view/AssetHelper.h
  tools/assimp_view/Background.cpp
+ tools/assimp_view/Background.h
+ tools/assimp_view/Camera.h
  tools/assimp_view/Display.cpp
  tools/assimp_view/Display.h
  tools/assimp_view/HelpDialog.cpp
@@ -309,39 +329,53 @@ Files: code/3DSConverter.cpp
  tools/assimp_view/MeshRenderer.h
  tools/assimp_view/MessageProc.cpp
  tools/assimp_view/Normals.cpp
+ tools/assimp_view/RenderOptions.h
  tools/assimp_view/SceneAnimator.cpp
  tools/assimp_view/SceneAnimator.h
  tools/assimp_view/Shaders.cpp
+ tools/assimp_view/Shaders.h
  tools/assimp_view/assimp_view.cpp
  tools/assimp_view/assimp_view.h
-Copyright: 2006-2008, ASSIMP Development Team
- 2006-2009, ASSIMP Development Team
- 2006-2010, ASSIMP Development Team
- HOLDERS AND CONTRIBUTORS
+Copyright: 2006-2008, assimp team
+  2006-2010, assimp team
+  2006-2011, assimp team
+  2006-2012, assimp team
+  HOLDERS AND CONTRIBUTORS
 License: BSD (3 clause)
  FIXME
 
-Files: CHANGES
+Files: AssimpBuildTreeSettings.cmake.in
+ AssimpConfig.cmake.in
+ AssimpConfigVersion.cmake.in
+ CHANGES
  CMakeLists.txt
  CREDITS
  INSTALL
+ ProjectHome.url
  README
+ Readme.md
+ Website.url
+ assimp-config-version.cmake.in
+ assimp-config.cmake.in
  assimp.pc.in
+ cmake-modules/cmake_uninstall.cmake.in
  code/CMakeLists.txt
  code/FileLogStream.h
  code/IFF.h
  code/IRRShared.h
- code/OgreImporter.h
- code/OgreXmlHelper.h
+ code/OgreImporter.hpp
+ code/OgreXmlHelper.hpp
  code/StdOStreamLogStream.h
  code/Win32DebugLogStream.h
  code/assbin_chunks.h
- code/makefile
  code/makefile.mingw
  code/res/resource.h
  contrib/ConvertUTF/readme.txt
  contrib/cppunit_note.txt
  contrib/irrXML_note.txt
+ contrib/poly2tri/AUTHORS
+ contrib/poly2tri/README
+ contrib/poly2tri_patch.txt
  contrib/zlib_note.txt
  debian/Makefile.samples
  debian/README.source
@@ -357,20 +391,13 @@ Files: CHANGES
  debian/libassimp-dev.install
  debian/libassimp-doc.doc-base
  debian/libassimp-doc.install
- debian/libassimp2-d-dev.docs
- debian/libassimp2-d-dev.install
- debian/libassimp2.install
- debian/libassimp2.symbols
- debian/libassimp2.ver
+ debian/libassimp3.install
+ debian/libassimp3.symbols
+ debian/libassimp3.ver
  debian/patches/doxygen.patch
- debian/patches/fix_spelling.patch
- debian/patches/hide-internal-classes.patch
- debian/patches/missing_architectures.patch
  debian/patches/no_boost_workaround.patch
  debian/patches/pyassimp.patch
  debian/patches/series
- debian/patches/use_system_zlib.patch
- debian/patches/visibility.patch
  debian/python-pyassimp.docs
  debian/python-pyassimp.install
  debian/setup.py
@@ -379,16 +406,22 @@ Files: CHANGES
  debian/watch
  doc/Doxyfile
  doc/Doxyfile_Cmd
- doc/assimp_html/dragonsplash.png
  doc/datastructure.xml
  doc/dox.h
  doc/dox_cmd.h
  doc/style.css
- include/Compiler/poppack1.h
- include/Compiler/pushpack1.h
- include/aiAssert.h
- include/aiMatrix3x3.inl
- obj/dummy
+ include/assimp/Compiler/poppack1.h
+ include/assimp/Compiler/pushpack1.h
+ include/assimp/ai_assert.h
+ packaging/windows-innosetup/WEB
+ packaging/windows-innosetup/howto-build-setup.txt
+ packaging/windows-innosetup/readme_installer.txt
+ packaging/windows-innosetup/readme_installer_vieweronly.txt
+ packaging/windows-innosetup/script.iss
+ packaging/windows-innosetup/script_vieweronly.iss
+ packaging/windows-mkzip/bin_readme.txt
+ packaging/windows-mkzip/mkfinal.bat
+ packaging/windows-mkzip/mkrev.bat
  port/Assimp.NET/Assimp.NET.sln
  port/Assimp.NET/Assimp.NET/Assimp.NET.vcproj
  port/Assimp.NET/Assimp.NET/AssimpSwigPort_wrap.cxx
@@ -479,14 +512,72 @@ Files: CHANGES
  port/Assimp.NET/Assimp.NET_DEMO/Properties/Settings.settings
  port/Assimp.NET/Assimp.NET_DEMO/app.config
  port/Assimp.NET/README.txt
+ port/AssimpDelphi/Readme.txt
+ port/AssimpDelphi/aiColor4D.pas
+ port/AssimpDelphi/aiMaterial.pas
+ port/AssimpDelphi/aiMatrix3x3.pas
+ port/AssimpDelphi/aiMatrix4x4.pas
+ port/AssimpDelphi/aiMesh.pas
+ port/AssimpDelphi/aiQuaternion.pas
+ port/AssimpDelphi/aiScene.pas
+ port/AssimpDelphi/aiTexture.pas
+ port/AssimpDelphi/aiTypes.pas
+ port/AssimpDelphi/aiVector2D.pas
+ port/AssimpDelphi/aiVector3D.pas
+ port/AssimpDelphi/assimp.pas
  port/PyAssimp/README
  port/PyAssimp/pyassimp/__init__.py
  port/PyAssimp/pyassimp/errors.py
  port/PyAssimp/pyassimp/helper.py
  port/PyAssimp/pyassimp/pyassimp.py
  port/PyAssimp/pyassimp/structs.py
+ port/PyAssimp/quicktest.py
  port/PyAssimp/sample.py
- port/dAssimp/README
+ port/PyAssimp3/README
+ port/PyAssimp3/pyassimp/__init__.py
+ port/PyAssimp3/pyassimp/errors.py
+ port/PyAssimp3/pyassimp/helper.py
+ port/PyAssimp3/pyassimp/pyassimp.py
+ port/PyAssimp3/pyassimp/structs.py
+ port/PyAssimp3/quicktest.py
+ port/PyAssimp3/sample.py
+ port/iOS/IPHONEOS_ARM6_TOOLCHAIN.cmake
+ port/iOS/IPHONEOS_ARM7_TOOLCHAIN.cmake
+ port/iOS/IPHONEOS_i386_TOOLCHAIN.cmake
+ port/iOS/README.txt
+ port/iOS/build_ios.sh
+ port/swig/DONOTUSEYET
+ port/swig/assimp.i
+ port/swig/d/build.sh
+ port/swig/d/generate.sh
+ port/swig/interface/DefaultLogger.i
+ port/swig/interface/IOStream.i
+ port/swig/interface/IOSystem.i
+ port/swig/interface/LogStream.i
+ port/swig/interface/Logger.i
+ port/swig/interface/NullLogger.i
+ port/swig/interface/aiAnim.i
+ port/swig/interface/aiAssert.i
+ port/swig/interface/aiCamera.i
+ port/swig/interface/aiColor4D.i
+ port/swig/interface/aiConfig.i
+ port/swig/interface/aiDefines.i
+ port/swig/interface/aiFileIO.i
+ port/swig/interface/aiLight.i
+ port/swig/interface/aiMaterial.i
+ port/swig/interface/aiMatrix3x3.i
+ port/swig/interface/aiMatrix4x4.i
+ port/swig/interface/aiMesh.i
+ port/swig/interface/aiPostProcess.i
+ port/swig/interface/aiQuaternion.i
+ port/swig/interface/aiScene.i
+ port/swig/interface/aiTexture.i
+ port/swig/interface/aiTypes.i
+ port/swig/interface/aiVector2D.i
+ port/swig/interface/aiVector3D.i
+ port/swig/interface/aiVersion.i
+ port/swig/interface/assimp.i
+ port/unmaintained/dAssimp/README
  revision.h
  samples/DevIL/AUTHORS
  samples/DevIL/CREDITS
@@ -521,6 +612,10 @@ Files: CHANGES
  samples/SimpleTexturedOpenGL/SimpleTexturedOpenGL/SimpleTexturedOpenGL.vcproj
  samples/SimpleTexturedOpenGL/SimpleTexturedOpenGL/include/boost_includes.h
  samples/SimpleTexturedOpenGL/SimpleTexturedOpenGL/src/model_loading.cpp
+ samples/bin/ShowDwarf.bat
+ samples/bin/ShowWuson.bat
+ scripts/IFCImporter/entitylist.txt
+ scripts/IFCImporter/genentitylist.sh
  scripts/OgreImporter/assimp.tpl
  tools/assimp_cmd/CMakeLists.txt
  tools/assimp_cmd/assimp_cmd.rc
@@ -566,6 +661,66 @@ Copyright: *No copyright*
 License: UNKNOWN
  FIXME
 
+Files: code/BlenderScene.cpp
+ code/BlenderSceneGen.h
+ code/MD4FileData.h
+ port/Assimp.NET/Assimp.NET/AssimpSwigPort.i
+ port/Assimp.NET/Assimp.NET_DEMO/AssimpView.Designer.cs
+ port/Assimp.NET/Assimp.NET_DEMO/AssimpView.cs
+ port/Assimp.NET/Assimp.NET_DEMO/Camera.cs
+ port/Assimp.NET/Assimp.NET_DEMO/Display.cs
+ port/Assimp.NET/Assimp.NET_DEMO/ExtensionMethods.cs
+ port/Assimp.NET/Assimp.NET_DEMO/Input.cs
+ port/Assimp.NET/Assimp.NET_DEMO/Program.cs
+ port/PyAssimp/gen/structsgen.py
+ port/unmaintained/dAssimp/assimp/animation.d
+ port/unmaintained/dAssimp/assimp/api.d
+ port/unmaintained/dAssimp/assimp/assimp.d
+ port/unmaintained/dAssimp/assimp/camera.d
+ port/unmaintained/dAssimp/assimp/config.d
+ port/unmaintained/dAssimp/assimp/fileIO.d
+ port/unmaintained/dAssimp/assimp/light.d
+ port/unmaintained/dAssimp/assimp/loader.d
+ port/unmaintained/dAssimp/assimp/material.d
+ port/unmaintained/dAssimp/assimp/math.d
+ port/unmaintained/dAssimp/assimp/mesh.d
+ port/unmaintained/dAssimp/assimp/postprocess.d
+ port/unmaintained/dAssimp/assimp/scene.d
+ port/unmaintained/dAssimp/assimp/texture.d
+ port/unmaintained/dAssimp/assimp/types.d
+ port/unmaintained/dAssimp/assimp/versionInfo.d
+ scripts/BlenderImporter/BlenderScene.cpp.template
+ scripts/BlenderImporter/BlenderSceneGen.h.template
+ scripts/BlenderImporter/genblenddna.py
+ scripts/IFCImporter/CppGenerator.py
+ scripts/IFCImporter/ExpressReader.py
+ scripts/IFCImporter/IFCReaderGen.cpp.template
+ scripts/IFCImporter/IFCReaderGen.h.template
+Copyright: 2006-2009, ASSIMP Development Team
+  2006-2010, ASSIMP Development Team
+  HOLDERS AND CONTRIBUTORS
+License: BSD (3 clause)
+ FIXME
+
+Files: contrib/poly2tri/LICENSE
+ contrib/poly2tri/poly2tri/common/shapes.cc
+ contrib/poly2tri/poly2tri/common/shapes.h
+ contrib/poly2tri/poly2tri/common/utils.h
+ contrib/poly2tri/poly2tri/poly2tri.h
+ contrib/poly2tri/poly2tri/sweep/advancing_front.cc
+ contrib/poly2tri/poly2tri/sweep/advancing_front.h
+ contrib/poly2tri/poly2tri/sweep/cdt.cc
+ contrib/poly2tri/poly2tri/sweep/cdt.h
+ contrib/poly2tri/poly2tri/sweep/sweep.cc
+ contrib/poly2tri/poly2tri/sweep/sweep.h
+ contrib/poly2tri/poly2tri/sweep/sweep_context.cc
+ contrib/poly2tri/poly2tri/sweep/sweep_context.h
+Copyright: 2009-2010, Poly2Tri Contributors
+  HOLDERS AND CONTRIBUTORS
+  OWNER OR
+License: BSD (3 clause)
+ FIXME
+
 Files: code/fast_atof.h
  contrib/irrXML/CXMLReaderImpl.h
  contrib/irrXML/heapsort.h
@@ -574,7 +729,7 @@ Files: code/fast_atof.h
  contrib/irrXML/irrTypes.h
  contrib/irrXML/irrXML.cpp
 Copyright: 2002-2005, Nikolaus Gebhardt
- 2002-2007, Nikolaus Gebhardt
+  2002-2007, Nikolaus Gebhardt
 License: UNKNOWN
  FIXME
 
@@ -584,22 +739,27 @@ Files: samples/DevIL/include/IL/devil_internal_exports.h
  samples/DevIL/include/IL/ilu_region.h
  samples/DevIL/include/IL/ilut.h
 Copyright: 2000-2002, Denton Woods
- 2000-2009, Denton Woods
+  2000-2009, Denton Woods
 License: UNKNOWN
- FIXME
-
-Files: tools/assimp_view/Background.h
- tools/assimp_view/Camera.h
- tools/assimp_view/RenderOptions.h
- tools/assimp_view/Shaders.h
-Copyright: *No copyright*
-License: GPL
  FIXME
 
 Files: samples/SimpleAssimpViewX/MyDocument.h
  samples/SimpleAssimpViewX/MyDocument.mm
  samples/SimpleAssimpViewX/main.m
 Copyright: __MyCompanyName__ 2010, .
+License: UNKNOWN
+ FIXME
+
+Files: contrib/clipper/License.txt
+ tools/assimp_cmd/generic_inserter.hpp
+Copyright: HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+  notices in the Software and this entire statement, including
+License: BSL-1
+ FIXME
+
+Files: contrib/clipper/clipper.cpp
+ contrib/clipper/clipper.hpp
+Copyright: : Angus Johnson 2010-2011, *
 License: UNKNOWN
  FIXME
 
@@ -621,19 +781,33 @@ Copyright: 2010, __MyCompanyName__.
 License: UNKNOWN
  FIXME
 
+Files: packaging/windows-innosetup/LICENSE.rtf
+Copyright: 2006-2010, ASSIMP Development Team\par
+  HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ONANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\par
+  of their respective creators. For a specific 3d model, see <model>.source.txt for more legal information. If you're such a holder and you believe we credited you inproperly or you don't want your files to appear in our repository, contact us.\par
+License: BSD (3 clause)
+ FIXME
+
+Files: code/Hash.h
+Copyright: 2004-2008, Paul Hsieh. It is used here in the belief that
+  2006-2012, assimp team
+  HOLDERS AND CONTRIBUTORS
+License: BSD (3 clause)
+ FIXME
+
 Files: LICENSE
-Copyright: 2006-2010, Assimp Development Team
- HOLDERS AND CONTRIBUTORS
- holder and believe that we credited you inproperly or
- of
+Copyright: 2006-2012, assimp team
+  HOLDERS AND CONTRIBUTORS
+  holder and believe that we credited you inproperly or
+  of
 License: BSD (3 clause)
  FIXME
 
 Files: code/MDCNormalTable.h
 Copyright: 2002, Randy Reddig & seaw0lf
- HOLDERS AND CONTRIBUTORS "AS IS" AND
- OWNER OR CONTRIBUTORS BE LIABLE FOR
- holders nor the names of its contributors may
+  HOLDERS AND CONTRIBUTORS "AS IS" AND
+  OWNER OR CONTRIBUTORS BE LIABLE FOR
+  holders nor the names of its contributors may
 License: BSD (3 clause)
  FIXME
 
@@ -642,30 +816,24 @@ Copyright: 2005-2007, Paul Hsieh
 License: BSD (3 clause)
  FIXME
 
-Files: tools/assimp_cmd/generic_inserter.hpp
-Copyright: HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
- notices in the Software and this entire statement, including
-License: BSL-1
- FIXME
-
 Files: debian/rules
 Copyright: 2011, IOhannes m zmölnig <zmoelnig@iem.at>
-License: GPL
+License: GPL-3+
  FIXME
 
 Files: samples/DevIL/COPYING
 Copyright: 1991, 1999 Free Software Foundation, Inc
- <year> <name of author>
- HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY
- HOLDERS AND/OR
- disclaimer" for the library, if
- holder or
- holder who places the Library under this License may add
- interest in the
- law: that is to say, a work containing the Library or a
- notices, you must include the
- the
-License: LGPL-2+
+  <year> <name of author>
+  HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY
+  HOLDERS AND/OR
+  disclaimer" for the library, if
+  holder or
+  holder who places the Library under this License may add
+  interest in the
+  law: that is to say, a work containing the Library or a
+  notices, you must include the
+  the
+License: LGPL-ever
  FIXME
 
 Files: samples/DevIL/README
@@ -678,31 +846,37 @@ Copyright: 2006-2010"
 License: UNKNOWN
  FIXME
 
+Files: cmake-modules/DebSourcePPA.cmake
+Copyright: ${DEBIAN_SOURCE_DIR}/debian/)
+  2010, Daniel Pfeifer <daniel@pfeifer-mail.de>
+License: UNKNOWN
+ FIXME
+
 Files: tools/assimp_view/assimp_view.rc
 Copyright: 2008-2009. Assimp Development Team. See the CREDITS file for a list of all contributors.",IDC_STATIC,30,65,204,23
 License: UNKNOWN
  FIXME
 
-Files: code/AssimpPCH.cpp
-Copyright: 2008-2010, ASSIMP Development Team\n"
-License: UNKNOWN
- FIXME
-
 Files: contrib/unzip/unzip.c
 Copyright: 1990-2000, Info-ZIP.
- 1998-2004, Gilles Vollant - http://www.winimage.com/zLibDll";
- 1998-2005, Gilles Vollant
+  1998-2004, Gilles Vollant - http://www.winimage.com/zLibDll";
+  1998-2005, Gilles Vollant
 License: UNKNOWN
  FIXME
 
 Files: contrib/unzip/crypt.h
 Copyright: 1998-2005, Gilles Vollant
- ^ (b)) & 0xff))) ^ ( >> 8))
+  ^ (b)) & 0xff))) ^ ( >> 8))
 License: UNKNOWN
  FIXME
 
 Files: port/Assimp.NET/Assimp.NET_DEMO/Properties/AssemblyInfo.cs
 Copyright: Microsoft 2010")
+License: UNKNOWN
+ FIXME
+
+Files: code/AssimpPCH.cpp
+Copyright: 2008-2010, assimp team\n"
 License: UNKNOWN
  FIXME
 
