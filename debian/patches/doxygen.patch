@@ -1,7 +1,17 @@
 Author: IOhannes m zmölnig
 Description: removed calls to HHC (only available on w32)
+ and install into tmp-directories (make 'clean' target easier)
 --- assimp.orig/doc/Doxyfile
 +++ assimp/doc/Doxyfile
+@@ -160,7 +160,7 @@
+ # configuration options related to the HTML output
+ #---------------------------------------------------------------------------
+ GENERATE_HTML          = YES
+-HTML_OUTPUT            = AssimpDoc_Html
++HTML_OUTPUT            = AssimpDoc_Html_tmp
+ HTML_FILE_EXTENSION    = .html
+ HTML_HEADER            = 
+ HTML_FOOTER            = 
 @@ -172,7 +172,6 @@
  DOCSET_BUNDLE_ID       = org.doxygen.Project
  GENERATE_HTMLHELP      = YES
@@ -12,6 +22,15 @@ Description: removed calls to HHC (only available on w32)
  BINARY_TOC             = NO
 --- assimp.orig/doc/Doxyfile_Cmd
 +++ assimp/doc/Doxyfile_Cmd
+@@ -158,7 +158,7 @@
+ # configuration options related to the HTML output
+ #---------------------------------------------------------------------------
+ GENERATE_HTML          = YES
+-HTML_OUTPUT            = AssimpCmdDoc_Html
++HTML_OUTPUT            = AssimpCmdDoc_Html_tmp
+ HTML_FILE_EXTENSION    = .html
+ HTML_HEADER            = 
+ HTML_FOOTER            = 
 @@ -170,7 +170,6 @@
  DOCSET_BUNDLE_ID       = org.doxygen.Project
  GENERATE_HTMLHELP      = YES
