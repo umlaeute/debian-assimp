@@ -12,7 +12,7 @@ assimp (3.0~dfsg-1) unstable; urgency=low
     from .symbols file
   * Removed D-bindings libassimp3-d-dev (deprecated upstream) (Closes: #677716)
   * Don't try to build samples
-  * Enabled hardening builds
+  * Enabled hardened builds
   * Build doxygen documentation in separate directory
   * Bumped standards version to 3.9.3
   * Bumped compat version to 9
@@ -21,7 +21,7 @@ assimp (3.0~dfsg-1) unstable; urgency=low
   * Updated debian/copyright
   * Updated debian/README.source for upstream-3.0
 
- -- IOhannes m zmoelnig (gpg-key at iem) <zmoelnig@iem.at>  Tue, 26 Jun 2012 10:39:04 +0200
+ -- IOhannes m zmoelnig (gpg-key at iem) <zmoelnig@iem.at>  Tue, 26 Jun 2012 10:51:54 +0200
 
 assimp (2.0.863+dfsg-2) unstable; urgency=low
 
