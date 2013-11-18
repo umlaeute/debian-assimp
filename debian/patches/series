@@ -1,3 +1,4 @@
 no_boost_workaround.patch
 pyassimp.patch
 doxygen.patch
+assimp-cmpdump_argcheck.patch
