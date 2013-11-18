@@ -1,3 +1,17 @@
+assimp (3.0~dfsg-2) UNRELEASED; urgency=low
+
+  * assimp-utils: Fixed 'assimp cmpdump' argcheck (Closes: #715653)
+  * libassimp3: lintian-override for false positive in spellcheck
+  * B-D (only) on the default libboost-dev
+  * Canonicalized Vcs-* stanzas
+  * Fixed my name (after gpg-key transition)
+  * Exclude more png-files from licensecheck
+  * Updated debian/copyright_hints
+  * Regenerated debian/control
+  * Bumped standards to 3.9.5
+
+ -- IOhannes m zmölnig <zmoelnig@iem.at>  Mon, 18 Nov 2013 15:15:36 +0100
+
 assimp (3.0~dfsg-1) unstable; urgency=low
 
   * New upstream
