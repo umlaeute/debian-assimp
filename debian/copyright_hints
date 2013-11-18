@@ -340,8 +340,7 @@ Copyright: 2006-2008, assimp team
   2006-2010, assimp team
   2006-2011, assimp team
   2006-2012, assimp team
-  HOLDERS AND CONTRIBUTORS
-License: BSD (3 clause)
+License: BSD-3-clause
  FIXME
 
 Files: AssimpBuildTreeSettings.cmake.in
@@ -394,6 +393,7 @@ Files: AssimpBuildTreeSettings.cmake.in
  debian/libassimp3.install
  debian/libassimp3.symbols
  debian/libassimp3.ver
+ debian/patches/assimp-cmpdump_argcheck.patch
  debian/patches/doxygen.patch
  debian/patches/no_boost_workaround.patch
  debian/patches/pyassimp.patch
@@ -621,7 +621,6 @@ Files: AssimpBuildTreeSettings.cmake.in
  tools/assimp_cmd/assimp_cmd.rc
  tools/assimp_cmd/resource.h
  tools/assimp_view/CMakeLists.txt
- tools/assimp_view/HUD.png
  tools/assimp_view/HUDMask.png
  tools/assimp_view/NOTE@help.rtf.txt
  tools/assimp_view/banner.bmp
@@ -698,8 +697,7 @@ Files: code/BlenderScene.cpp
  scripts/IFCImporter/IFCReaderGen.h.template
 Copyright: 2006-2009, ASSIMP Development Team
   2006-2010, ASSIMP Development Team
-  HOLDERS AND CONTRIBUTORS
-License: BSD (3 clause)
+License: BSD-3-clause
  FIXME
 
 Files: contrib/poly2tri/LICENSE
@@ -716,9 +714,7 @@ Files: contrib/poly2tri/LICENSE
  contrib/poly2tri/poly2tri/sweep/sweep_context.cc
  contrib/poly2tri/poly2tri/sweep/sweep_context.h
 Copyright: 2009-2010, Poly2Tri Contributors
-  HOLDERS AND CONTRIBUTORS
-  OWNER OR
-License: BSD (3 clause)
+License: BSD-3-clause
  FIXME
 
 Files: code/fast_atof.h
@@ -743,6 +739,13 @@ Copyright: 2000-2002, Denton Woods
 License: UNKNOWN
  FIXME
 
+Files: contrib/unzip/crypt.h
+ contrib/unzip/ioapi.c
+ contrib/unzip/ioapi.h
+Copyright: 1998-2005, Gilles Vollant
+License: UNKNOWN
+ FIXME
+
 Files: samples/SimpleAssimpViewX/MyDocument.h
  samples/SimpleAssimpViewX/MyDocument.mm
  samples/SimpleAssimpViewX/main.m
@@ -752,20 +755,13 @@ License: UNKNOWN
 
 Files: contrib/clipper/License.txt
  tools/assimp_cmd/generic_inserter.hpp
-Copyright: HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
-  notices in the Software and this entire statement, including
+Copyright: *No copyright*
 License: BSL-1
  FIXME
 
 Files: contrib/clipper/clipper.cpp
  contrib/clipper/clipper.hpp
 Copyright: : Angus Johnson 2010-2011, *
-License: UNKNOWN
- FIXME
-
-Files: contrib/unzip/ioapi.c
- contrib/unzip/ioapi.h
-Copyright: 1998-2005, Gilles Vollant
 License: UNKNOWN
  FIXME
 
@@ -783,37 +779,30 @@ License: UNKNOWN
 
 Files: packaging/windows-innosetup/LICENSE.rtf
 Copyright: 2006-2010, ASSIMP Development Team\par
-  HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ONANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\par
   of their respective creators. For a specific 3d model, see <model>.source.txt for more legal information. If you're such a holder and you believe we credited you inproperly or you don't want your files to appear in our repository, contact us.\par
-License: BSD (3 clause)
+License: BSD-3-clause
+ FIXME
+
+Files: code/pstdint.h
+Copyright: 2005-2007, Paul Hsieh
+License: BSD-3-clause
  FIXME
 
 Files: code/Hash.h
 Copyright: 2004-2008, Paul Hsieh. It is used here in the belief that
   2006-2012, assimp team
-  HOLDERS AND CONTRIBUTORS
-License: BSD (3 clause)
- FIXME
-
-Files: LICENSE
-Copyright: 2006-2012, assimp team
-  HOLDERS AND CONTRIBUTORS
-  holder and believe that we credited you inproperly or
-  of
-License: BSD (3 clause)
+License: BSD-3-clause
  FIXME
 
 Files: code/MDCNormalTable.h
 Copyright: 2002, Randy Reddig & seaw0lf
-  HOLDERS AND CONTRIBUTORS "AS IS" AND
-  OWNER OR CONTRIBUTORS BE LIABLE FOR
-  holders nor the names of its contributors may
-License: BSD (3 clause)
+License: BSD-3-clause
  FIXME
 
-Files: code/pstdint.h
-Copyright: 2005-2007, Paul Hsieh
-License: BSD (3 clause)
+Files: LICENSE
+Copyright: 2006-2012, assimp team
+  of
+License: BSD-3-clause
  FIXME
 
 Files: debian/rules
@@ -824,14 +813,9 @@ License: GPL-3+
 Files: samples/DevIL/COPYING
 Copyright: 1991, 1999 Free Software Foundation, Inc
   <year> <name of author>
-  HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY
-  HOLDERS AND/OR
   disclaimer" for the library, if
-  holder or
-  holder who places the Library under this License may add
   interest in the
   law: that is to say, a work containing the Library or a
-  notices, you must include the
   the
 License: LGPL-ever
  FIXME
@@ -864,12 +848,6 @@ Copyright: 1990-2000, Info-ZIP.
 License: UNKNOWN
  FIXME
 
-Files: contrib/unzip/crypt.h
-Copyright: 1998-2005, Gilles Vollant
-  ^ (b)) & 0xff))) ^ ( >> 8))
-License: UNKNOWN
- FIXME
-
 Files: port/Assimp.NET/Assimp.NET_DEMO/Properties/AssemblyInfo.cs
 Copyright: Microsoft 2010")
 License: UNKNOWN
@@ -882,11 +860,11 @@ License: UNKNOWN
 
 Files: contrib/unzip/unzip.h
 Copyright: 1998-2005, Gilles Vollant
-License: zlib/libpng
+License: Zlib
  FIXME
 
 Files: contrib/irrXML/irrXML.h
 Copyright: 2002-2005, Nikolaus Gebhardt
-License: zlib/libpng
+License: Zlib
  FIXME
 
