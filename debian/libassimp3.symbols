@@ -23,7 +23,7 @@ libassimp.so.3 libassimp3 #MINVER#
  (c++)"Assimp::DefaultLogger::m_pLogger@Base" 2.0.863
  (c++)"Assimp::DefaultLogger::DefaultLogger(Assimp::Logger::LogSeverity)@Base" 2.0.863
  (c++)"Assimp::DefaultLogger::~DefaultLogger()@Base" 2.0.863
- (c++)"Assimp::ProgressHandler::~ProgressHandler()@Base" 2.0.863
+ (c++|optional)"Assimp::ProgressHandler::~ProgressHandler()@Base" 2.0.863
  (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator delete[](void*)@Base" 2.0.863
  (c++)"Assimp::Intern::AllocateFromAssimpHeap::operator delete(void*)@Base" 2.0.863
  (c++|subst)"Assimp::Intern::AllocateFromAssimpHeap::operator new[]({c++:size_t})@Base" 2.0.863
@@ -34,7 +34,7 @@ libassimp.so.3 libassimp3 #MINVER#
  (c++)"Assimp::Logger::warn(char const*)@Base" 3.0~
  (c++)"Assimp::Logger::debug(char const*)@Base" 3.0~
  (c++)"Assimp::Logger::error(char const*)@Base" 3.0~
- (c++)"Assimp::Logger::~Logger()@Base" 2.0.863
+ (c++|optional)"Assimp::Logger::~Logger()@Base" 2.0.863
  (c++)"Assimp::Exporter::ExportToBlob(aiScene const*, char const*, unsigned int)@Base" 3.0~
  (c++)"Assimp::Exporter::SetIOHandler(Assimp::IOSystem*)@Base" 3.0~
  (c++)"Assimp::Exporter::RegisterExporter(Assimp::Exporter::ExportFormatEntry const&)@Base" 3.0~
@@ -43,8 +43,8 @@ libassimp.so.3 libassimp3 #MINVER#
  (c++)"Assimp::Exporter::FreeBlob()@Base" 3.0~
  (c++)"Assimp::Exporter::Exporter()@Base" 3.0~
  (c++)"Assimp::Exporter::~Exporter()@Base" 3.0~
- (c++)"Assimp::IOStream::~IOStream()@Base" 2.0.863
- (c++)"Assimp::IOSystem::~IOSystem()@Base" 2.0.863
+ (c++|optional)"Assimp::IOStream::~IOStream()@Base" 2.0.863
+ (c++|optional)"Assimp::IOSystem::~IOSystem()@Base" 2.0.863
  (c++)"Assimp::Importer::SetIOHandler(Assimp::IOSystem*)@Base" 2.0.863
  (c++)"Assimp::Importer::RegisterLoader(Assimp::BaseImporter*)@Base" 2.0.863
  (c++)"Assimp::Importer::RegisterPPStep(Assimp::BaseProcess*)@Base" 2.0.863
@@ -64,7 +64,7 @@ libassimp.so.3 libassimp3 #MINVER#
  (c++)"Assimp::Importer::Importer()@Base" 2.0.863
  (c++)"Assimp::Importer::~Importer()@Base" 2.0.863
  (c++)"Assimp::LogStream::createDefaultStream(aiDefaultLogStream, char const*, Assimp::IOSystem*)@Base" 2.0.863
- (c++)"Assimp::LogStream::~LogStream()@Base" 2.0.863
+ (c++|optional)"Assimp::LogStream::~LogStream()@Base" 2.0.863
  (c++)"Assimp::Exporter::GetIOHandler() const@Base" 3.0~
  (c++)"Assimp::Exporter::GetErrorString() const@Base" 3.0~
  (c++)"Assimp::Exporter::GetOrphanedBlob() const@Base" 3.0~
