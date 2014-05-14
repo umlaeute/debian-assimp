@@ -1,7 +1,7 @@
 Source: assimp
 Section: graphics
 Priority: extra
-Maintainer: IOhannes m zmölnig <zmoelnig@iem.at>
+Maintainer: IOhannes m zmölnig (Debian/GNU) <umlaeute@debian.org>
 Homepage: http://assimp.sourceforge.net/
 Standards-Version: 3.9.5
 Build-Depends: @cdbs@,
