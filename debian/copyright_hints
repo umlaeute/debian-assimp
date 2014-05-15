@@ -391,6 +391,7 @@ Files: AssimpBuildTreeSettings.cmake.in
  debian/libassimp-doc.doc-base
  debian/libassimp-doc.install
  debian/libassimp3.install
+ debian/libassimp3.lintian-overrides
  debian/libassimp3.symbols
  debian/libassimp3.ver
  debian/patches/assimp-cmpdump_argcheck.patch
