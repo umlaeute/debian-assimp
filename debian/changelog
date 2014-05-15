@@ -1,3 +1,12 @@
+assimp (3.0~dfsg-3) unstable; urgency=medium
+
+  [ IOhannes m zmölnig (Debian/GNU) ]
+  * Marked symbols as optional (Closes: #746826)
+  * Updated my Maintainer's name
+  * Regenerated debian/{control,copyright_hints}
+
+ -- IOhannes m zmölnig (Debian/GNU) <umlaeute@debian.org>  Thu, 15 May 2014 10:30:13 +0200
+
 assimp (3.0~dfsg-2) unstable; urgency=low
 
   * assimp-utils: Fixed 'assimp cmpdump' argcheck (Closes: #715653)
